@@ -1,0 +1,46 @@
+<div id="record-popup" aria-hidden="true" class="record-popup popup">
+	<div class="popup__wrapper">
+		<div class="popup__content">
+			<button data-close type="button" class="popup__close">
+				<svg>
+					<use xlink:href="@img/icons/icons.svg#cross"></use>
+				</svg>
+			</button>
+			<div class="form-container">
+				<h2>
+					Запись на прием <br />
+					в клинику «Зрение»
+				</h2>
+				<form class="form-container__form" action="#">
+					<div class="form-container__text-fields">
+						<div class="form-container__input-wrapper">
+							<input class="form-container__input input" type="text" placeholder="Имя" data-required />
+							<div class="form-container__input-error">* Заполните поле</div>
+						</div>
+						<div class="form-container__input-wrapper">
+							<input
+								class="form-container__input input tel"
+								type="tel"
+								placeholder="Телефон"
+								data-required />
+							<div class="form-container__input-error">* Заполните поле</div>
+						</div>
+						<select data-class-modif="form">
+							<option value="1" selected>Казанцев Александр Дмитриевич</option>
+							<option value="2">Башина Ирина Александровна</option>
+							<option value="3">Оганесян Арман Арменович</option>
+							<option value="4">Дибина Дарья Андреевна</option>
+						</select>
+					</div>
+					<button class="form-container__button button-section button-fluid" type="submit">
+						Записаться на прием
+					</button>
+				</form>
+				<div class="form-container__agreement">
+					Отправляя заявку, вы соглашаетесь с <br />
+					<a href="#">Пользовательским соглашением</a>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>

@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+	@@include('html/_head.htm',{ "title":"О нас" })
+	<body>
+		<div class="wrapper background-grey">
+			@@include('html/_header.htm',{})
+			<main class="page">
+				<section class="section-6 gutter-adapt">
+					<div class="section-6__container">
+						<div class="section-6__body">
+							<div class="section-6__title">
+								<svg>
+									<use xlink:href="@img/icons/icons.svg#vision"></use>
+								</svg>
+							</div>
+							<div class="section-6__blocks">
+								<div
+									class="section-6__block-wrapper section-6__block-wrapper_left item-container-top-fix background-white item-container-inner">
+									<div class="section-6__top">
+										<div class="section-6__image-ibg">
+											<img
+												class="_lazy"
+												data-srcset="@img/section-6/01@1x.png, @img/section-6/01@2x.png 2x"
+												alt="img" />
+										</div>
+										<h2>Медицинский центр «Зрение» был создан в 2004 году</h2>
+									</div>
+									<p>Это была первая частная клиника в Костанайской области</p>
+								</div>
+								<div class="section-6__block-wrapper section-6__block-wrapper_medium item-container">
+									<div class="section-6__image-ibg">
+										<img
+											class="_lazy"
+											data-srcset="@img/section-6/02@1x.jpg, @img/section-6/02@2x.jpg 2x"
+											alt="img" />
+									</div>
+									<div class="section-6__image-ibg section-6__image-ibg_mobile">
+										<img
+											class="_lazy"
+											data-srcset="@img/section-6/02--mobile@1x.jpg, @img/section-6/02--mobile@2x.jpg 2x"
+											alt="img" />
+									</div>
+								</div>
+								<div class="section-6__block-wrapper section-6__block-wrapper_right item-container">
+									<p>
+										Мы провели <span>48 000</span> операций по лечению сетчатки, лазерных коррекций
+										зрения и операций на катаракте
+									</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+				<section class="section-7">
+					<div class="section-7__container">
+						<div class="section-7__body">
+							<div class="section-7__text-wrapper">
+								<div class="section-7__decorate-icon-ibg">
+									<img class="_lazy" data-srcset="@img/section-7/gear.svg" alt="img" />
+								</div>
+								<p>
+									Врачи проходят <br class="br-mobile" />
+									аттестацию и курсы <br class="br-mobile" />
+									повышения квалификации, <br class="br-mobile" />
+									а также принимают <br class="br-mobile" />
+									участие в казахстанских, <br class="br-mobile" />
+									российских и европейских <br class="br-mobile" />
+									конференциях
+								</p>
+							</div>
+						</div>
+					</div>
+					<div class="section-7__map-ibg">
+						<img class="_lazy" data-srcset="@img/section-7/map.svg" alt="img" />
+					</div>
+				</section>
+				<section class="section-8">
+					<div class="section-8__container">
+						<div class="section-8__body">
+							<div class="section-8__block-left item-container background-white">
+								<div class="section-8__inner">
+									<a class="section-8__image-wrapper" href="#">
+										<div class="section-8__doctor-img-ibg">
+											<img
+												class="_lazy"
+												data-srcset="@img/section-8/01@1x.png, @img/section-8/01@2x.png 2x"
+												alt="img" />
+										</div>
+									</a>
+									<div class="section-8__content item-container-inner">
+										<div class="section-8__text-wrapper section-title-container">
+											<h2>Врачи и специалисты высочайшей квалификации</h2>
+											<p>
+												На протяжении всей жизни клиники в ней работает ее основатель, к.м.н.,
+												врач высшей категории <a href="#">Маслова Елена Евгеньевна</a>. Она
+												является одним из признанных авторитетов среди офтальмологов
+												Костанайской области. На данный момент доктор Маслова лечебной
+												деятельностью не занимается и выполняет только административную работу
+											</p>
+										</div>
+										<a class="button-accent" href="#">Наши врачи</a>
+									</div>
+								</div>
+							</div>
+							<div class="section-8__block-right item-container background-accent">
+								<div class="section-8__content item-container-inner">
+									<div class="section-8__icon">
+										<svg>
+											<use xlink:href="@img/icons/icons.svg#dots"></use>
+										</svg>
+									</div>
+									<p>Широкий спектр услуг и профессиональных специалистов по лечению зрения</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+
+				<div class="cookie-agreement active">
+					<div class="cookie-agreement__container">
+						<div class="cookie-agreement__body">
+							<p>
+								Мы собираем cokkie-данные, чтобы сделать работу сайта лучше и не используем их в
+								коммерческих целях
+							</p>
+							<button class="button-section-small" type="button">Понятно</button>
+						</div>
+					</div>
+				</div>
+			</main>
+			@@include('html/_footer.htm',{})
+		</div>
+
+		@@include('html/_diagnostics-popup.htm',{}) @@include('html/_question-popup.htm',{})
+		@@include('html/_record-popup.htm',{}) @@include('html/_js.htm',{})
+	</body>
+</html>

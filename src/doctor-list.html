@@ -1,0 +1,815 @@
+<!DOCTYPE html>
+<html lang="en">
+	@@include('html/_head.htm',{ "title":"Врачи" })
+	<body>
+		<div class="wrapper background-grey">
+			@@include('html/_header.htm',{})
+			<main class="page">
+				<section class="doctor-list gutter-large">
+					<div class="doctor-list__container">
+						<div class="doctor-list__body">
+							<h2>Врачи</h2>
+							<div class="doctor-list__categories gutter-medium">
+								<button class="doctor-category" data-filter=".doctor-1">
+									<div class="doctor-category__image-ibg">
+										<img
+											class="_lazy"
+											data-srcset="@img/doctor-list/category/01@1x.jpg, @img/doctor-list/category/01@2x.jpg 2x"
+											alt="img" />
+									</div>
+									<div class="doctor-category__name">
+										Башина <br />
+										Ирина Александровна
+									</div>
+								</button>
+								<button class="doctor-category" data-filter=".doctor-2">
+									<div class="doctor-category__image-ibg">
+										<img
+											class="_lazy"
+											data-srcset="@img/doctor-list/category/02@1x.jpg, @img/doctor-list/category/02@2x.jpg 2x"
+											alt="img" />
+									</div>
+									<div class="doctor-category__name">
+										Оганесян <br />
+										Арман Арменович
+									</div>
+								</button>
+								<button class="doctor-category" data-filter=".doctor-3">
+									<div class="doctor-category__image-ibg">
+										<img
+											class="_lazy"
+											data-srcset="@img/doctor-list/category/03@1x.jpg, @img/doctor-list/category/03@2x.jpg 2x"
+											alt="img" />
+									</div>
+									<div class="doctor-category__name">
+										Дибина <br />
+										Дарья Андреевна
+									</div>
+								</button>
+								<button class="doctor-category" data-filter=".doctor-4">
+									<div class="doctor-category__image-ibg">
+										<img
+											class="_lazy"
+											data-srcset="@img/doctor-list/category/04@1x.jpg, @img/doctor-list/category/04@2x.jpg 2x"
+											alt="img" />
+									</div>
+									<div class="doctor-category__name">
+										Казанцев <br />
+										Александр Дмитриевич
+									</div>
+								</button>
+							</div>
+							<div class="doctor-list__content">
+								<div class="doctor-info mix doctor-1">
+									<div class="doctor-info__preview">
+										<div class="doctor-info__image-ibg">
+											<img
+												class="_lazy"
+												data-srcset="@img/doctor-list/preview/01@1x.png, @img/doctor-list/preview/01@2x.png 2x"
+												alt="img" />
+										</div>
+										<a class="button-accent button-fluid" href="#" data-popup="#diagnostics-popup">Записаться на консультацию</a>
+									</div>
+									<div class="doctor-info__content">
+										<div class="doctor-info__top">
+											<div class="doctor-info__text-wrapper">
+												<h3>
+													Башина <br />
+													Ирина Александровна
+												</h3>
+												<p>Офтальмолог, детский офтальмолог</p>
+											</div>
+											<div class="doctor-info__experience">Стаж 9 лет</div>
+										</div>
+										<div class="doctor-info__education">
+											<h4>Образование</h4>
+											<div class="doctor-info__education-items">
+												<div class="doctor-info__education-item">
+													<h5>2014</h5>
+													<p>
+														Российский университет дружбы народов им. П. Лумумбы (РУДН)
+														(лечебное дело)
+													</p>
+												</div>
+												<div class="doctor-info__education-item">
+													<h5>2016 · Ординатура</h5>
+													<p>
+														Российский университет дружбы народов им. П. Лумумбы (РУДН)
+														(офтальмология)
+													</p>
+												</div>
+												<div class="doctor-info__education-item">
+													<h5>2019 · Аспирантура</h5>
+													<p>
+														Российский университет дружбы народов им. П. Лумумбы (РУДН)
+														(клиническая медицина)
+													</p>
+												</div>
+											</div>
+										</div>
+										<div class="doctor-info__education">
+											<h4>Повышение квалификации</h4>
+											<div class="doctor-info__education-items">
+												<div class="doctor-info__education-item">
+													<h5>2017</h5>
+													<p>
+														«Диагностика и лечение патологии макулярной области», Институт
+														повышения квалификации ФМБА
+													</p>
+												</div>
+												<div class="doctor-info__education-item">
+													<h5>2018</h5>
+													<p>
+														«Сосудистая патология сетчатки», Российская медицинская академия
+														непрерывного профессионального образования
+													</p>
+												</div>
+												<div class="doctor-info__education-item">
+													<h5>2018</h5>
+													<p>
+														«Воспалительные заболевания глаз», Красноярский государственный
+														медицинский университет
+													</p>
+												</div>
+											</div>
+										</div>
+										<div class="doctor-info__certificates">
+											<h4>Дипломы и сертификаты</h4>
+											<div class="certificate-slider">
+												<div class="certificate-slider__body certificate-slider__swiper">
+													<div class="certificate-slider__slide">
+														<a class="certificate-slider__slide-ibg" href="#" data-gallery>
+															<img
+																class="_lazy"
+																data-srcset="@img/doctor-list/content/certificates/doctor-01/01@1x.jpg, @img/doctor-list/content/certificates/doctor-01/01@2x.jpg 2x"
+																alt="img" />
+															<img
+																class="certificate-slider__inner _lazy"
+																data-srcset="@img/doctor-list/content/certificates/doctor-01/inner/01@1x.jpg, @img/doctor-list/content/certificates/doctor-01/inner/01@2x.jpg 2x"
+																alt="img" />
+														</a>
+														<div class="certificate-slider__slide-actions">
+															<a class="certificate-slider__slide-icon" href="#">
+																<svg>
+																	<use xlink:href="@img/icons/icons.svg#show"></use>
+																</svg>
+															</a>
+															<a class="certificate-slider__slide-icon" href="#">
+																<svg>
+																	<use xlink:href="@img/icons/icons.svg#download"></use>
+																</svg>
+															</a>
+														</div>
+													</div>
+													<div class="certificate-slider__slide">
+														<a class="certificate-slider__slide-ibg" href="#" data-gallery>
+															<img
+																class="_lazy"
+																data-srcset="@img/doctor-list/content/certificates/doctor-01/02@1x.jpg, @img/doctor-list/content/certificates/doctor-01/02@2x.jpg 2x"
+																alt="img" />
+															<img
+																class="certificate-slider__inner _lazy"
+																data-srcset="@img/doctor-list/content/certificates/doctor-01/inner/01@1x.jpg, @img/doctor-list/content/certificates/doctor-01/inner/01@2x.jpg 2x"
+																alt="img" />
+														</a>
+														<div class="certificate-slider__slide-actions">
+															<a class="certificate-slider__slide-icon" href="#">
+																<svg>
+																	<use xlink:href="@img/icons/icons.svg#show"></use>
+																</svg>
+															</a>
+															<a class="certificate-slider__slide-icon" href="#">
+																<svg>
+																	<use xlink:href="@img/icons/icons.svg#download"></use>
+																</svg>
+															</a>
+														</div>
+													</div>
+													<div class="certificate-slider__slide">
+														<a class="certificate-slider__slide-ibg" href="#" data-gallery>
+															<img
+																class="_lazy"
+																data-srcset="@img/doctor-list/content/certificates/doctor-01/03@1x.jpg, @img/doctor-list/content/certificates/doctor-01/03@2x.jpg 2x"
+																alt="img" />
+															<img
+																class="certificate-slider__inner _lazy"
+																data-srcset="@img/doctor-list/content/certificates/doctor-01/inner/01@1x.jpg, @img/doctor-list/content/certificates/doctor-01/inner/01@2x.jpg 2x"
+																alt="img" />
+														</a>
+														<div class="certificate-slider__slide-actions">
+															<a class="certificate-slider__slide-icon" href="#">
+																<svg>
+																	<use xlink:href="@img/icons/icons.svg#show"></use>
+																</svg>
+															</a>
+															<a class="certificate-slider__slide-icon" href="#">
+																<svg>
+																	<use xlink:href="@img/icons/icons.svg#download"></use>
+																</svg>
+															</a>
+														</div>
+													</div>
+													<div class="certificate-slider__slide">
+														<a class="certificate-slider__slide-ibg" href="#" data-gallery>
+															<img
+																class="_lazy"
+																data-srcset="@img/doctor-list/content/certificates/doctor-01/04@1x.jpg, @img/doctor-list/content/certificates/doctor-01/04@2x.jpg 2x"
+																alt="img" />
+															<img
+																class="certificate-slider__inner _lazy"
+																data-srcset="@img/doctor-list/content/certificates/doctor-01/inner/01@1x.jpg, @img/doctor-list/content/certificates/doctor-01/inner/01@2x.jpg 2x"
+																alt="img" />
+														</a>
+														<div class="certificate-slider__slide-actions">
+															<a class="certificate-slider__slide-icon" href="#">
+																<svg>
+																	<use xlink:href="@img/icons/icons.svg#show"></use>
+																</svg>
+															</a>
+															<a class="certificate-slider__slide-icon" href="#">
+																<svg>
+																	<use xlink:href="@img/icons/icons.svg#download"></use>
+																</svg>
+															</a>
+														</div>
+													</div>
+													<div class="certificate-slider__slide">
+														<a class="certificate-slider__slide-ibg" href="#" data-gallery>
+															<img
+																class="_lazy"
+																data-srcset="@img/doctor-list/content/certificates/doctor-01/05@1x.jpg, @img/doctor-list/content/certificates/doctor-01/05@2x.jpg 2x"
+																alt="img" />
+															<img
+																class="certificate-slider__inner _lazy"
+																data-srcset="@img/doctor-list/content/certificates/doctor-01/inner/01@1x.jpg, @img/doctor-list/content/certificates/doctor-01/inner/01@2x.jpg 2x"
+																alt="img" />
+														</a>
+														<div class="certificate-slider__slide-actions">
+															<a class="certificate-slider__slide-icon" href="#">
+																<svg>
+																	<use xlink:href="@img/icons/icons.svg#show"></use>
+																</svg>
+															</a>
+															<a class="certificate-slider__slide-icon" href="#">
+																<svg>
+																	<use xlink:href="@img/icons/icons.svg#download"></use>
+																</svg>
+															</a>
+														</div>
+													</div>
+												</div>
+												<div class="certificate-slider__controlls slider-controlls">
+													<div class="slider-arrows">
+														<button class="slider-arrow slider-arrow-prev" type="button">
+															<svg>
+																<use xlink:href="@img/icons/icons.svg#arrow"></use>
+															</svg>
+														</button>
+														<button class="slider-arrow slider-arrow-next" type="button">
+															<svg>
+																<use xlink:href="@img/icons/icons.svg#arrow"></use>
+															</svg>
+														</button>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="doctor-info mix doctor-2">
+									<div class="doctor-info__preview">
+										<div class="doctor-info__image-ibg">
+											<img
+												class="_lazy"
+												data-srcset="@img/doctor-list/preview/02@1x.png, @img/doctor-list/preview/02@2x.png 2x"
+												alt="img" />
+										</div>
+										<a class="button-accent button-fluid" href="#" data-popup="#diagnostics-popup">Записаться на консультацию</a>
+									</div>
+									<div class="doctor-info__content">
+										<div class="doctor-info__top">
+											<div class="doctor-info__text-wrapper">
+												<h3>
+													Оганесян <br />
+													Арман Арменович
+												</h3>
+												<p>Офтальмолог, офтальмохирург</p>
+											</div>
+											<div class="doctor-info__experience">Стаж 7 лет</div>
+										</div>
+										<div class="doctor-info__education">
+											<h4>Образование</h4>
+											<div class="doctor-info__education-items">
+												<div class="doctor-info__education-item">
+													<h5>2016</h5>
+													<p>
+														Южно-Уральский государственный медицинский университет (лечебное
+														дело)
+													</p>
+												</div>
+												<div class="doctor-info__education-item">
+													<h5>2018</h5>
+													<p>
+														Научно-образовательный центр ФГАУ «МНТК «Микрохирургия глаза»
+														им.акад.С.Н. Федорова» (офтальмология)
+													</p>
+												</div>
+											</div>
+										</div>
+										<div class="doctor-info__education">
+											<h4>Повышение квалификации</h4>
+											<div class="doctor-info__education-items">
+												<div class="doctor-info__education-item">
+													<h5>2018</h5>
+													<p>«Рефракционная офтальмохирургия»</p>
+												</div>
+											</div>
+										</div>
+										<div class="doctor-info__certificates">
+											<h4>Дипломы и сертификаты</h4>
+											<div class="certificate-slider">
+												<div class="certificate-slider__body certificate-slider__swiper">
+													<div class="certificate-slider__slide">
+														<a class="certificate-slider__slide-ibg" href="#" data-gallery>
+															<img
+																class="_lazy"
+																data-srcset="@img/doctor-list/content/certificates/doctor-02/01@1x.jpg, @img/doctor-list/content/certificates/doctor-02/01@2x.jpg 2x"
+																alt="img" />
+															<img
+																class="certificate-slider__inner _lazy"
+																data-srcset="@img/doctor-list/content/certificates/doctor-02/inner/01@1x.jpg, @img/doctor-list/content/certificates/doctor-02/inner/01@2x.jpg 2x"
+																alt="img" />
+														</a>
+														<div class="certificate-slider__slide-actions">
+															<a class="certificate-slider__slide-icon" href="#">
+																<svg>
+																	<use xlink:href="@img/icons/icons.svg#show"></use>
+																</svg>
+															</a>
+															<a class="certificate-slider__slide-icon" href="#">
+																<svg>
+																	<use xlink:href="@img/icons/icons.svg#download"></use>
+																</svg>
+															</a>
+														</div>
+													</div>
+													<div class="certificate-slider__slide">
+														<a class="certificate-slider__slide-ibg" href="#" data-gallery>
+															<img
+																class="_lazy"
+																data-srcset="@img/doctor-list/content/certificates/doctor-02/02@1x.jpg, @img/doctor-list/content/certificates/doctor-02/02@2x.jpg 2x"
+																alt="img" />
+															<img
+																class="certificate-slider__inner _lazy"
+																data-srcset="@img/doctor-list/content/certificates/doctor-02/inner/01@1x.jpg, @img/doctor-list/content/certificates/doctor-02/inner/01@2x.jpg 2x"
+																alt="img" />
+														</a>
+														<div class="certificate-slider__slide-actions">
+															<a class="certificate-slider__slide-icon" href="#">
+																<svg>
+																	<use xlink:href="@img/icons/icons.svg#show"></use>
+																</svg>
+															</a>
+															<a class="certificate-slider__slide-icon" href="#">
+																<svg>
+																	<use xlink:href="@img/icons/icons.svg#download"></use>
+																</svg>
+															</a>
+														</div>
+													</div>
+													<div class="certificate-slider__slide">
+														<a class="certificate-slider__slide-ibg" href="#" data-gallery>
+															<img
+																class="_lazy"
+																data-srcset="@img/doctor-list/content/certificates/doctor-02/03@1x.jpg, @img/doctor-list/content/certificates/doctor-02/03@2x.jpg 2x"
+																alt="img" />
+															<img
+																class="certificate-slider__inner _lazy"
+																data-srcset="@img/doctor-list/content/certificates/doctor-02/inner/01@1x.jpg, @img/doctor-list/content/certificates/doctor-02/inner/01@2x.jpg 2x"
+																alt="img" />
+														</a>
+														<div class="certificate-slider__slide-actions">
+															<a class="certificate-slider__slide-icon" href="#">
+																<svg>
+																	<use xlink:href="@img/icons/icons.svg#show"></use>
+																</svg>
+															</a>
+															<a class="certificate-slider__slide-icon" href="#">
+																<svg>
+																	<use xlink:href="@img/icons/icons.svg#download"></use>
+																</svg>
+															</a>
+														</div>
+													</div>
+													<div class="certificate-slider__slide">
+														<a class="certificate-slider__slide-ibg" href="#" data-gallery>
+															<img
+																class="_lazy"
+																data-srcset="@img/doctor-list/content/certificates/doctor-02/04@1x.jpg, @img/doctor-list/content/certificates/doctor-02/04@2x.jpg 2x"
+																alt="img" />
+															<img
+																class="certificate-slider__inner _lazy"
+																data-srcset="@img/doctor-list/content/certificates/doctor-02/inner/01@1x.jpg, @img/doctor-list/content/certificates/doctor-02/inner/01@2x.jpg 2x"
+																alt="img" />
+														</a>
+														<div class="certificate-slider__slide-actions">
+															<a class="certificate-slider__slide-icon" href="#">
+																<svg>
+																	<use xlink:href="@img/icons/icons.svg#show"></use>
+																</svg>
+															</a>
+															<a class="certificate-slider__slide-icon" href="#">
+																<svg>
+																	<use xlink:href="@img/icons/icons.svg#download"></use>
+																</svg>
+															</a>
+														</div>
+													</div>
+												</div>
+												<div class="certificate-slider__controlls slider-controlls">
+													<div class="slider-arrows">
+														<button class="slider-arrow slider-arrow-prev" type="button">
+															<svg>
+																<use xlink:href="@img/icons/icons.svg#arrow"></use>
+															</svg>
+														</button>
+														<button class="slider-arrow slider-arrow-next" type="button">
+															<svg>
+																<use xlink:href="@img/icons/icons.svg#arrow"></use>
+															</svg>
+														</button>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="doctor-info mix doctor-3">
+									<div class="doctor-info__preview">
+										<div class="doctor-info__image-ibg">
+											<img
+												class="_lazy"
+												data-srcset="@img/doctor-list/preview/03@1x.png, @img/doctor-list/preview/03@2x.png 2x"
+												alt="img" />
+										</div>
+										<a class="button-accent button-fluid" href="#" data-popup="#diagnostics-popup">Записаться на консультацию</a>
+									</div>
+									<div class="doctor-info__content">
+										<div class="doctor-info__top">
+											<div class="doctor-info__text-wrapper">
+												<h3>
+													Дибина <br />
+													Дарья Андреевна
+												</h3>
+												<p>Офтальмолог, офтальмохирург</p>
+											</div>
+											<div class="doctor-info__experience">Стаж 7 лет</div>
+										</div>
+										<div class="doctor-info__education">
+											<h4>Образование</h4>
+											<div
+												class="doctor-info__education-items doctor-info__education-items--adapt">
+												<div class="doctor-info__education-items--inner">
+													<div class="doctor-info__education-item">
+														<h5>2016</h5>
+														<p>
+															Российский Национальный Исследовательский университет им.
+															Н.И. Пирогова по специальности «Лечебное дело»
+														</p>
+													</div>
+													<div class="doctor-info__education-item">
+														<h5>2018</h5>
+														<p>
+															Клиническая ординатура в ФГАУ НМИЦ МНТК «Микрохирургии г.
+															глаза» им. С.Н. Федоровапо специальности «Офтальмология»
+														</p>
+													</div>
+												</div>
+												<div class="doctor-info__education-items--inner">
+													<h4 class="doctor-info__education-items--header">
+														Повышение квалификации
+													</h4>
+													<div class="doctor-info__education-item">
+														<h5>2021</h5>
+														<p>
+															Аспирантура в ФГАУ НМИЦ МНТК «Микрохирургии глаза» им. С.Н.
+															Федоровапо специальности «Глазные болезни»
+														</p>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="doctor-info__certificates">
+											<h4>Дипломы и сертификаты</h4>
+											<div class="certificate-slider">
+												<div class="certificate-slider__body certificate-slider__swiper">
+													<div class="certificate-slider__slide">
+														<a class="certificate-slider__slide-ibg" href="#" data-gallery>
+															<img
+																class="_lazy"
+																data-srcset="@img/doctor-list/content/certificates/doctor-03/01@1x.jpg, @img/doctor-list/content/certificates/doctor-03/01@2x.jpg 2x"
+																alt="img" />
+															<img
+																class="certificate-slider__inner _lazy"
+																data-srcset="@img/doctor-list/content/certificates/doctor-03/inner/01@1x.jpg, @img/doctor-list/content/certificates/doctor-03/inner/01@2x.jpg 2x"
+																alt="img" />
+														</a>
+														<div class="certificate-slider__slide-actions">
+															<a class="certificate-slider__slide-icon" href="#">
+																<svg>
+																	<use xlink:href="@img/icons/icons.svg#show"></use>
+																</svg>
+															</a>
+															<a class="certificate-slider__slide-icon" href="#">
+																<svg>
+																	<use xlink:href="@img/icons/icons.svg#download"></use>
+																</svg>
+															</a>
+														</div>
+													</div>
+													<div class="certificate-slider__slide">
+														<a class="certificate-slider__slide-ibg" href="#" data-gallery>
+															<img
+																class="_lazy"
+																data-srcset="@img/doctor-list/content/certificates/doctor-03/02@1x.jpg, @img/doctor-list/content/certificates/doctor-03/02@2x.jpg 2x"
+																alt="img" />
+															<img
+																class="certificate-slider__inner _lazy"
+																data-srcset="@img/doctor-list/content/certificates/doctor-03/inner/01@1x.jpg, @img/doctor-list/content/certificates/doctor-03/inner/01@2x.jpg 2x"
+																alt="img" />
+														</a>
+														<div class="certificate-slider__slide-actions">
+															<a class="certificate-slider__slide-icon" href="#">
+																<svg>
+																	<use xlink:href="@img/icons/icons.svg#show"></use>
+																</svg>
+															</a>
+															<a class="certificate-slider__slide-icon" href="#">
+																<svg>
+																	<use xlink:href="@img/icons/icons.svg#download"></use>
+																</svg>
+															</a>
+														</div>
+													</div>
+													<div class="certificate-slider__slide">
+														<a class="certificate-slider__slide-ibg" href="#" data-gallery>
+															<img
+																class="_lazy"
+																data-srcset="@img/doctor-list/content/certificates/doctor-03/03@1x.jpg, @img/doctor-list/content/certificates/doctor-03/03@2x.jpg 2x"
+																alt="img" />
+															<img
+																class="certificate-slider__inner _lazy"
+																data-srcset="@img/doctor-list/content/certificates/doctor-03/inner/01@1x.jpg, @img/doctor-list/content/certificates/doctor-03/inner/01@2x.jpg 2x"
+																alt="img" />
+														</a>
+														<div class="certificate-slider__slide-actions">
+															<a class="certificate-slider__slide-icon" href="#">
+																<svg>
+																	<use xlink:href="@img/icons/icons.svg#show"></use>
+																</svg>
+															</a>
+															<a class="certificate-slider__slide-icon" href="#">
+																<svg>
+																	<use xlink:href="@img/icons/icons.svg#download"></use>
+																</svg>
+															</a>
+														</div>
+													</div>
+												</div>
+												<div class="certificate-slider__controlls slider-controlls">
+													<div class="slider-arrows">
+														<button class="slider-arrow slider-arrow-prev" type="button">
+															<svg>
+																<use xlink:href="@img/icons/icons.svg#arrow"></use>
+															</svg>
+														</button>
+														<button class="slider-arrow slider-arrow-next" type="button">
+															<svg>
+																<use xlink:href="@img/icons/icons.svg#arrow"></use>
+															</svg>
+														</button>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="doctor-info mix doctor-4">
+									<div class="doctor-info__preview">
+										<div class="doctor-info__image-ibg">
+											<img
+												class="_lazy"
+												data-srcset="@img/doctor-list/preview/04@1x.png, @img/doctor-list/preview/04@2x.png 2x"
+												alt="img" />
+										</div>
+										<a class="button-accent button-fluid" href="#" data-popup="#diagnostics-popup">Записаться на консультацию</a>
+									</div>
+									<div class="doctor-info__content">
+										<div class="doctor-info__top">
+											<div class="doctor-info__text-wrapper">
+												<h3>
+													Казанцев <br />
+													Александр Дмитриевич
+												</h3>
+												<p>Офтальмолог, офтальмохирург</p>
+											</div>
+											<div class="doctor-info__experience">Стаж 7 лет</div>
+										</div>
+										<div class="doctor-info__about">
+											<h4>О враче</h4>
+											<p>
+												Написал несколько десятков статей по офтальмологии, в том числе
+												рецензируемых ВАК
+											</p>
+										</div>
+										<div class="doctor-info__awards">
+											<h4>Награды</h4>
+											<a class="button-section" href="#">
+												<img
+													class="_lazy"
+													data-srcset="@img/section-16/medal@1x.png, @img/section-16/medal@2x.png 2x"
+													alt="img" />
+												<span>Премия ПроДокторов 2022</span>
+											</a>
+										</div>
+										<div class="doctor-info__education">
+											<h4>Образование</h4>
+											<div class="doctor-info__education-items">
+												<div class="doctor-info__education-item">
+													<h5>2016</h5>
+													<p>
+														Южно-Уральский государственный медицинский университет (лечебное
+														дело)
+													</p>
+												</div>
+												<div class="doctor-info__education-item">
+													<h5>2018</h5>
+													<p>
+														Научно-образовательный центр ФГАУ «МНТК «Микрохирургия глаза»
+														им.акад.С.Н. Федорова» (офтальмология)
+													</p>
+												</div>
+											</div>
+										</div>
+										<div class="doctor-info__education">
+											<h4>Повышение квалификации</h4>
+											<div class="doctor-info__education-items">
+												<div class="doctor-info__education-item">
+													<h5>2016</h5>
+													<p>
+														«Факоэмульсификация катаракты с применением ультразвука», Москва
+													</p>
+												</div>
+												<div class="doctor-info__education-item">
+													<h5>2018</h5>
+													<p>
+														«Лазерная коррекция с применением лазерных систем компании
+														Schwind», Кляйностайм, Германия
+													</p>
+												</div>
+												<div class="doctor-info__education-item">
+													<h5>2018</h5>
+													<p>«Рефракционная офтальмохирургия»</p>
+												</div>
+											</div>
+										</div>
+										<div class="doctor-info__patents">
+											<h4>Имеет несколько патентов</h4>
+											<ul>
+												<li>
+													Способ выполнения автоматизированного непрерывного капсулорексиса и
+													кольцо для его осуществления
+												</li>
+												<li>
+													Способ расчета толщины лоскута при эксимерлазерных операциях на
+													роговице
+												</li>
+												<li>
+													Способ передней глубокой послойной кератопластики с применением
+													эксимерного лазера
+												</li>
+												<li>
+													Способ дооперационного расчета и модификации интраокулярной линзы
+													лазерной абляцией
+												</li>
+											</ul>
+										</div>
+										<div class="doctor-info__certificates">
+											<h4>Дипломы и сертификаты</h4>
+											<div class="certificate-slider">
+												<div class="certificate-slider__body certificate-slider__swiper">
+													<div class="certificate-slider__slide">
+														<a class="certificate-slider__slide-ibg" href="#" data-gallery>
+															<img
+																class="_lazy"
+																data-srcset="@img/doctor-list/content/certificates/doctor-04/01@1x.jpg, @img/doctor-list/content/certificates/doctor-04/01@2x.jpg 2x"
+																alt="img" />
+															<img
+																class="certificate-slider__inner _lazy"
+																data-srcset="@img/doctor-list/content/certificates/doctor-04/inner/01@1x.jpg, @img/doctor-list/content/certificates/doctor-04/inner/01@2x.jpg 2x"
+																alt="img" />
+														</a>
+														<div class="certificate-slider__slide-actions">
+															<a class="certificate-slider__slide-icon" href="#">
+																<svg>
+																	<use xlink:href="@img/icons/icons.svg#show"></use>
+																</svg>
+															</a>
+															<a class="certificate-slider__slide-icon" href="#">
+																<svg>
+																	<use xlink:href="@img/icons/icons.svg#download"></use>
+																</svg>
+															</a>
+														</div>
+													</div>
+													<div class="certificate-slider__slide">
+														<a class="certificate-slider__slide-ibg" href="#" data-gallery>
+															<img
+																class="_lazy"
+																data-srcset="@img/doctor-list/content/certificates/doctor-04/02@1x.jpg, @img/doctor-list/content/certificates/doctor-04/02@2x.jpg 2x"
+																alt="img" />
+															<img
+																class="certificate-slider__inner _lazy"
+																data-srcset="@img/doctor-list/content/certificates/doctor-04/inner/01@1x.jpg, @img/doctor-list/content/certificates/doctor-04/inner/01@2x.jpg 2x"
+																alt="img" />
+														</a>
+														<div class="certificate-slider__slide-actions">
+															<a class="certificate-slider__slide-icon" href="#">
+																<svg>
+																	<use xlink:href="@img/icons/icons.svg#show"></use>
+																</svg>
+															</a>
+															<a class="certificate-slider__slide-icon" href="#">
+																<svg>
+																	<use xlink:href="@img/icons/icons.svg#download"></use>
+																</svg>
+															</a>
+														</div>
+													</div>
+													<div class="certificate-slider__slide">
+														<a class="certificate-slider__slide-ibg" href="#" data-gallery>
+															<img
+																class="_lazy"
+																data-srcset="@img/doctor-list/content/certificates/doctor-04/03@1x.jpg, @img/doctor-list/content/certificates/doctor-04/03@2x.jpg 2x"
+																alt="img" />
+															<img
+																class="certificate-slider__inner _lazy"
+																data-srcset="@img/doctor-list/content/certificates/doctor-04/inner/01@1x.jpg, @img/doctor-list/content/certificates/doctor-04/inner/01@2x.jpg 2x"
+																alt="img" />
+														</a>
+														<div class="certificate-slider__slide-actions">
+															<a class="certificate-slider__slide-icon" href="#">
+																<svg>
+																	<use xlink:href="@img/icons/icons.svg#show"></use>
+																</svg>
+															</a>
+															<a class="certificate-slider__slide-icon" href="#">
+																<svg>
+																	<use xlink:href="@img/icons/icons.svg#download"></use>
+																</svg>
+															</a>
+														</div>
+													</div>
+												</div>
+												<div class="certificate-slider__controlls slider-controlls">
+													<div class="slider-arrows">
+														<button class="slider-arrow slider-arrow-prev" type="button">
+															<svg>
+																<use xlink:href="@img/icons/icons.svg#arrow"></use>
+															</svg>
+														</button>
+														<button class="slider-arrow slider-arrow-next" type="button">
+															<svg>
+																<use xlink:href="@img/icons/icons.svg#arrow"></use>
+															</svg>
+														</button>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+
+				<div class="cookie-agreement active">
+					<div class="cookie-agreement__container">
+						<div class="cookie-agreement__body">
+							<p>
+								Мы собираем cokkie-данные, чтобы сделать работу сайта лучше и не используем их в
+								коммерческих целях
+							</p>
+							<button class="button-section-small" type="button">Понятно</button>
+						</div>
+					</div>
+				</div>
+			</main>
+			@@include('html/_footer.htm',{})
+		</div>
+
+		@@include('html/_diagnostics-popup.htm',{}) @@include('html/_question-popup.htm',{})
+		@@include('html/_record-popup.htm',{}) @@include('html/_js.htm',{})
+	</body>
+</html>

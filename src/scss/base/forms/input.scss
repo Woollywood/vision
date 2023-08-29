@@ -1,0 +1,21 @@
+//<INPUT>
+// Сниппет (HTML): inp
+.input {
+	width: 100%;
+	background-color: transparent;
+	padding-top: rem(20);
+	padding-bottom: rem(20);
+	@include adaptiveValue("padding-left", 30, 20, 0, $maxWidthContainer, 360);
+	@include adaptiveValue("padding-right", 50, 20, 0, $maxWidthContainer, 360);
+	border-radius: rem(100);
+	border: rem(1) solid #fff;
+	color: #fff;
+	font-size: rem(16);
+	line-height: 100%;
+
+	&::placeholder {
+		color: #fff;
+		font-size: rem(16);
+		line-height: 100%;
+	}
+}

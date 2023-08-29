@@ -1,0 +1,99 @@
+.button {
+	border-radius: rem(100);
+	padding: rem(20) rem(30);
+
+	display: inline-flex;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+}
+
+.button-section {
+	@extend .button;
+
+	background-color: #fff;
+	border: rem(1) solid $accent-color;
+	color: $accent-color;
+	font-weight: 500;
+	line-height: 100%;
+
+	@media (max-width: $mobileSmall) {
+		width: 100%;
+	}
+
+	transition: all 0.3s ease;
+	&:not(:disabled) {
+		@media (any-hover: hover) {
+			&:hover {
+				background-color: #F3F7FF;
+			}
+		}
+	}
+
+	&:disabled {
+		color: #9AA6BE;
+		cursor: auto;
+	}
+}
+
+.button-section-small {
+	@extend .button-section;
+
+	padding: rem(15) rem(30);
+}
+
+.button-section-very-small {
+	@extend .button-section;
+
+	padding: rem(6) rem(10);
+}
+
+.button-red {
+	color: red
+}
+
+.button-section-large {
+	@extend .button-section;
+
+	padding: rem(20) rem(50);
+}
+
+.button-accent {
+	@extend .button;
+
+	background-color: $accent-color;
+	color: #fff;
+	font-weight: 500;
+	line-height: 100%;
+
+	@media (max-width: $mobileSmall) {
+		width: 100%;
+	}
+
+	transition: all 0.3s ease;
+	@media (any-hover: hover) {
+		&:hover {
+			background-color: #004BB9;
+		}
+	}
+}
+
+.button-accent-small {
+	@extend .button-accent;
+
+	padding: rem(15) rem(20);
+}
+
+.button-accent-large {
+	@extend .button-accent;
+
+	padding: rem(20) rem(50);
+}
+
+.button-fluid {
+	width: 100%;
+}
+
+.button-hover-reset {
+	pointer-events: none;
+}

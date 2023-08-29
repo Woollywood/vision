@@ -1,0 +1,73 @@
+.title-font {
+	@include adaptiveValue('font-size', 36, 24, 0, $maxWidthContainer, 360);
+	font-weight: 500;
+	line-height: 120%;
+}
+
+.block-title-font {
+	@include adaptiveValue('font-size', 36, 20, 0, $maxWidthContainer, 360);
+	font-weight: 500;
+	line-height: 120%;
+}
+
+.title-shadow-font {
+	text-shadow: 0px 1px 0 rgb(255, 255, 255), 0px -1px 0 rgb(255, 255, 255), 1px 0px 0 rgb(255, 255, 255),
+		-1px 0px 0 rgb(255, 255, 255), 1px 1px 0 rgb(255, 255, 255), 1px -1px 0 rgb(255, 255, 255),
+		-1px 1px 0 rgb(255, 255, 255), -1px -1px 0 rgb(255, 255, 255);
+	-webkit-text-shadow: 0px 1px 0 rgb(255, 255, 255), 0px -1px 0 rgb(255, 255, 255), 1px 0px 0 rgb(255, 255, 255),
+		-1px 0px 0 rgb(255, 255, 255), 1px 1px 0 rgb(255, 255, 255), 1px -1px 0 rgb(255, 255, 255),
+		-1px 1px 0 rgb(255, 255, 255), -1px -1px 0 rgb(255, 255, 255);
+	-moz-text-shadow: 0px 1px 0 rgb(255, 255, 255), 0px -1px 0 rgb(255, 255, 255), 1px 0px 0 rgb(255, 255, 255),
+		-1px 0px 0 rgb(255, 255, 255), 1px 1px 0 rgb(255, 255, 255), 1px -1px 0 rgb(255, 255, 255),
+		-1px 1px 0 rgb(255, 255, 255), -1px -1px 0 rgb(255, 255, 255);
+	@include adaptiveValue("font-size", 60, 40, 0, $maxWidthContainer, 360);
+	color: #fff;
+}
+
+h2 {
+	@extend .title-font;
+}
+
+h3 {
+	@include adaptiveValue("font-size", 28, 20, 0, $maxWidthContainer, 360);
+	font-weight: 500;
+	line-height: 120%;
+
+	&:not(:last-child) {
+		@include adaptiveValue("margin-bottom", 30, 20, 0, $maxWidthContainer, 360);
+	}
+}
+
+h4 {
+	@include adaptiveValue("font-size", 18, 16, 0, $maxWidthContainer, 360);
+	font-weight: 500;
+}
+
+h6 {
+	font-size: rem(18);
+	font-weight: 500;
+
+	&:not(:last-child) {
+		@include adaptiveValue("margin-bottom", 10, 15, 0, $maxWidthContainer, 360);
+	}
+}
+
+p {
+	line-height: 150%;
+}
+
+.slider-title {
+	@include adaptiveValue("font-size", 20, 14, 0, $maxWidthContainer, 360);
+	font-weight: 500;
+	line-height: 120%;
+}
+
+.slider-text {
+	@include adaptiveValue("font-size", 16, 12, 0, $maxWidthContainer, 360);
+	font-weight: 500;
+	line-height: 120%;
+}
+
+.text-center {
+	text-align: center;
+}

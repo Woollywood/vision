@@ -1,0 +1,56 @@
+// Внутренние отступы для контейнера в секции и border-radius
+.item-container {
+	@include adaptiveValue('padding-top', 50, 30, 0, $maxWidthContainer, 360);
+	@include adaptiveValue('padding-bottom', 50, 30, 0, $maxWidthContainer, 360);
+
+	@include adaptiveValue('padding-left', 50, 20, 0, $maxWidthContainer, 360);
+	@include adaptiveValue('padding-right', 50, 20, 0, $maxWidthContainer, 360);
+
+	@include adaptiveValue('border-radius', 50, 30, 0, $maxWidthContainer, 360);
+	overflow: hidden;
+}
+
+// Внутренние отступы с уменьшенным верхним для контейнера в секции и border-radius
+.item-container-top-fix {
+	@extend .item-container;
+
+	@include adaptiveValue('padding-top', 40, 30, 0, $maxWidthContainer, 360);
+}
+
+// Внутренние стили контейнера в секции
+.item-container-inner {
+	display: flex;
+	flex-direction: column;
+	gap: rem(16);
+
+	justify-content: space-between;
+	align-items: flex-start;
+}
+
+.item-container-outstroke {
+	border: rem(1) solid $accent-color;
+}
+
+.section-title-container {
+	> h2 {
+		@include adaptiveValue("margin-bottom", 30, 15, 0, $maxWidthContainer, 360);
+	}
+}
+
+.label-container {
+	display: flex;
+	@include adaptiveValue('gap', 8, 5, 0, $maxWidthContainer, 360);
+	flex-wrap: wrap;
+}
+
+.grid-items-4 {
+	display: grid;
+	gap: rem(10);
+	grid-template-columns: repeat(4, 1fr);
+}
+
+.grid-cards-container {
+	display: grid;
+	@include adaptiveValue('gap', 20, 0, 0, $maxWidthContainer, 360);
+	grid-template-columns: repeat(auto-fit, minmax(rem(260), 1fr));
+}

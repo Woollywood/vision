@@ -1,0 +1,37 @@
+.label {
+	@extend .button;
+	text-align: unset;
+
+	background-color: #fff;
+	color: $accent-color;
+	@include adaptiveValue('font-size', 18, 14, 0, $maxWidthContainer, 360);
+	font-weight: 500;
+	line-height: 100%;
+
+	padding: rem(10) 0;
+	@include adaptiveValue('padding-right', 20, 15, 0, $maxWidthContainer, 360);
+	@include adaptiveValue('padding-left', 20, 15, 0, $maxWidthContainer, 360);
+
+	display: flex;
+	align-items: center;
+	gap: rem(15);
+
+	svg {
+		width: rem(12);
+		height: rem(12);
+		fill: $accent-color;
+	}
+
+	transition: all 0.3s ease;
+	@media (any-hover: hover) {
+		&:hover {
+			background-color: #f3f7ff;
+		}
+	}
+}
+
+.label-outstroke {
+	@extend .label;
+
+	border: rem(1) solid $accent-color;
+}

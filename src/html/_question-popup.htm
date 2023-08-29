@@ -1,0 +1,44 @@
+<div id="question-popup" aria-hidden="true" class="question-popup popup">
+	<div class="popup__wrapper">
+		<div class="popup__content">
+			<button data-close type="button" class="popup__close">
+				<svg>
+					<use xlink:href="@img/icons/icons.svg#cross"></use>
+				</svg>
+			</button>
+			<div class="form-container">
+				<h2>Задать вопрос офтальмологу</h2>
+				<form class="form-container__form" action="#" data-ajax>
+					<div class="form-container__text-fields">
+						<div class="form-container__input-wrapper">
+							<input class="form-container__input input" type="text" placeholder="Имя" data-required />
+							<div class="form-container__input-error">* Заполните поле</div>
+						</div>
+						<div class="form-container__input-wrapper">
+							<input
+								class="form-container__input input tel"
+								type="tel"
+								placeholder="Телефон"
+								data-required />
+							<div class="form-container__input-error">* Заполните поле</div>
+						</div>
+						<div class="form-container__input-wrapper">
+							<textarea
+								class="form-container__textarea input border-radius-30-20"
+								placeholder="Вопрос"
+								data-required></textarea>
+							<div class="form-container__input-error">* Заполните поле</div>
+						</div>
+					</div>
+					<button class="form-container__button button-section button-fluid" type="submit">
+						Отправить заявку
+					</button>
+				</form>
+				<div class="form-container__agreement">
+					Отправляя заявку, вы соглашаетесь с <br />
+					<a href="#">Пользовательским соглашением</a>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>

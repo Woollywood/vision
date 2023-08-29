@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+	@@include('html/_head.htm',{ "title":"Контакты" })
+	<body>
+		<div class="wrapper background-grey">
+			@@include('html/_header.htm',{})
+			<main class="page">
+				<section class="section-5 gutter-top gutter-large">
+					<div class="section-5__container section-title-container">
+						<h2>Контакты</h2>
+						<div class="section-5__body section-5__body--border-radius background-white">
+							<div class="section-5__block-left max-height">
+								<iframe
+									class="border-radius-30"
+									src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2402.910729001357!2d63.13460187706873!3d52.96802030296294!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x43cd028e21960071%3A0x5899d1e26351c947!2z0YPQuy4gNDAg0LvQtdGCINCe0LrRgtGP0LHRgNGPIDMwLCDQoNGD0LTQvdGL0LkgMTExNTAwLCDQmtCw0LfQsNGF0YHRgtCw0L0!5e0!3m2!1sru!2sru!4v1689470506611!5m2!1sru!2sru"
+									style="border: 0"
+									allowfullscreen=""
+									loading="lazy"
+									referrerpolicy="no-referrer-when-downgrade"></iframe>
+							</div>
+							<div class="section-5__block-right item-container">
+								<div class="section-5__content">
+									<a class="section-5__tel title-font color-accent" href="tel:+77143124289"
+										>+7 (71431) 2-42-89</a
+									>
+									<div class="section-5__adress">
+										<div class="section-5__adress-title color-accent">Наш адрес</div>
+										<a class="section-5__adress-link section-5__adress-link--column" href="#">
+											<span>г.Рудный, ул. 40 Лет Октября, д.30 «Оптика» </span>
+											<span>(остановка «Пожарная часть»)</span>
+										</a>
+										<p>
+											Доехать в глазную больницу из Костаная можно, заехавв город Рудный по улице
+											Ленина, повернуть направо сразу после отеля на площади города и проехав
+											через один перекресток. Почти сразу после него слева будет здание с надписью
+											Медицинский центр «Зрение»
+										</p>
+									</div>
+									<div class="section-5__schedule">
+										<div class="section-5__schedule-title color-accent">График работы</div>
+										<div class="section-5__schedule-items">
+											<div class="section-5__schedule-item">
+												<div
+													class="section-5__schedule-label button-section-very-small border-reset background-grey">
+													Пн-Пт
+												</div>
+												<div class="section-5__schedule-text">9:00-17:00</div>
+											</div>
+											<div class="section-5__schedule-item">
+												<div
+													class="section-5__schedule-label button-section-very-small border-reset background-grey">
+													Сб
+												</div>
+												<div class="section-5__schedule-text">9:00-12:00</div>
+											</div>
+											<div class="section-5__schedule-item">
+												<div
+													class="section-5__schedule-label button-section-very-small button-red border-reset background-grey">
+													Вс
+												</div>
+												<div class="section-5__schedule-text">выходной день</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+				<section class="form-bottom gutter-medium">
+					<div class="form-bottom__container">
+						<div class="form-bottom__body">
+							<h2 class="color-white">Оставить заявку на консультацию</h2>
+							<div class="form-bottom__form-wrapper">
+								<form class="form-bottom__form" action="/" data-ajax>
+									<div class="form-bottom__form-inputs">
+										<div class="form-bottom__form-input-wrapper">
+											<input
+												type="text"
+												class="form-bottom__form-input input"
+												placeholder="Имя"
+												data-required />
+											<div class="form-bottom__form-input-error">* Заполните поле</div>
+										</div>
+										<div class="form-bottom__form-input-wrapper">
+											<input
+												type="tel"
+												class="form-bottom__form-input input tel"
+												placeholder="Телефон"
+												data-required />
+											<div class="form-bottom__form-input-error">* Заполните поле</div>
+										</div>
+									</div>
+									<button class="form-bottom__form-button button-section-large" type="submit">
+										Отправить заявку
+									</button>
+								</form>
+								<div class="form-bottom__new-ticket">
+									<button class="form-bottom__form-button button-section-large" type="button">
+										Новая заявка
+									</button>
+									<p>Ваша заявка отправлена. В ближайшее время с вами свяжутся из клиники</p>
+								</div>
+								<div class="form-agreement">
+									Отправляя заявку, вы соглашаетесь <br />
+									<a href="#">с Пользовательским соглашением</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+
+				<div class="cookie-agreement active">
+					<div class="cookie-agreement__container">
+						<div class="cookie-agreement__body">
+							<p>
+								Мы собираем cokkie-данные, чтобы сделать работу сайта лучше и не используем их в
+								коммерческих целях
+							</p>
+							<button class="button-section-small" type="button">Понятно</button>
+						</div>
+					</div>
+				</div>
+			</main>
+			@@include('html/_footer.htm',{})
+		</div>
+
+		@@include('html/_diagnostics-popup.htm',{}) @@include('html/_question-popup.htm',{})
+		@@include('html/_record-popup.htm',{}) @@include('html/_js.htm',{})
+	</body>
+</html>

@@ -1,0 +1,23 @@
+.gutter-small {
+	margin-bottom: rem(5);
+}
+
+.gutter-medium {
+	margin-bottom: rem(20);
+}
+
+.gutter-large {
+	margin-bottom: rem(50);
+}
+
+.gutter-adapt {
+	@include adaptiveValue("margin-bottom", 80, 50, 0, $maxWidthContainer, 360);
+}
+
+.gutter-top {
+	@include adaptiveValue('padding-top', 40, 30, 0, $maxWidthContainer, 360);
+}
+
+.gutter-top-large {
+	@include adaptiveValue('padding-top', 80, 50, 0, $maxWidthContainer, 360);
+}
