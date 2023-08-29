@@ -598,6 +598,11 @@
 				transition: all 0.3s ease;
 				&._spoller-active {
 					background-color: #fff;
+
+					.spollers__body {
+						visibility: visible;
+						@include adaptiveValue('padding-top', 20, 15, 0, $maxWidthContainer, 360);
+					}
 				}
 
 				&__item {
@@ -606,6 +611,8 @@
 
 					@include adaptiveValue('padding-left', 20, 15, 0, $maxWidthContainer, 360);
 					@include adaptiveValue('padding-right', 30, 15, 0, $maxWidthContainer, 360);
+
+					overflow: hidden;
 
 					cursor: pointer;
 					@media (any-hover: hover) {
@@ -647,9 +654,10 @@
 				}
 
 				&__body {
-					@include adaptiveValue('padding-top', 20, 15, 0, $maxWidthContainer, 360);
 					@include adaptiveValue('padding-left', 20, 0, 0, $maxWidthContainer, 360);
 					@include adaptiveValue('padding-right', 50, 0, 0, $maxWidthContainer, 360);
+
+					visibility: hidden;
 
 					ol li {
 						list-style-position: inside;
@@ -3472,7 +3480,7 @@
 			transition: all 0.3s ease;
 		}
 
-		&._spoller-active {
+		._spoller-active & {
 			svg {
 				display: none;
 			}
@@ -3480,10 +3488,15 @@
 	}
 
 	&__body {
-		@include adaptiveValue('padding-top', 10, 0, 0, $maxWidthContainer, 360);
 		@include adaptiveValue('padding-left', 50, 20, 0, $maxWidthContainer, 360);
 		@include adaptiveValue('padding-right', 50, 20, 0, $maxWidthContainer, 360);
-		@include adaptiveValue('padding-bottom', 40, 30, 0, $maxWidthContainer, 360);
+
+		visibility: hidden;
+		._spoller-active & {
+			visibility: visible;
+			@include adaptiveValue('padding-top', 10, 0, 0, $maxWidthContainer, 360);
+			@include adaptiveValue('padding-bottom', 50, 30, 0, $maxWidthContainer, 360);
+		}
 	}
 
 	&__list {

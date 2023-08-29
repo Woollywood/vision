@@ -54,13 +54,16 @@ window.addEventListener('load', (windowEvent) => {
 
 	document.addEventListener('click', (clickEvent) => {
 		const targetElement = clickEvent.target;
+
 		if (window.innerWidth > 767.98 && isMobile.any())
 			if (
 				targetElement.closest('.menu__item') &&
 				targetElement.closest('.menu__item').querySelector('.sub-menu')
 			) {
-				const menuItem = targetElement.closest('.menu__item');
-				menuItem.querySelector('.sub-menu').classList.toggle('_touch-show');
+				if (clickEvent.pointerId != -1) {
+					const menuItem = targetElement.closest('.menu__item');
+					menuItem.querySelector('.sub-menu').classList.toggle('_touch-show');
+				}
 			}
 		if (targetElement.closest('.connect-menu__button')) {
 			targetElement.closest('.connect-menu__button').classList.toggle('_open');
@@ -89,6 +92,9 @@ window.addEventListener('load', (windowEvent) => {
 		}
 		if (targetElement.closest('.cookie-agreement__body .button-section-small')) {
 			targetElement.closest('.cookie-agreement').classList.remove('active');
+		}
+		if (targetElement.closest('.menu__summary')) {
+			targetElement.closest('.menu__summary').click();
 		}
 	});
 });

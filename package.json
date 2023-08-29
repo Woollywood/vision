@@ -20,6 +20,7 @@
 	},
 	"devDependencies": {
 		"@types/isotope-layout": "^3.0.9",
+		"accordion-js": "^3.3.4",
 		"aos": "^2.3.4",
 		"bootstrap": "^5.3.1",
 		"copy-webpack-plugin": "latest",

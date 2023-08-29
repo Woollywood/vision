@@ -64,7 +64,7 @@ import "./libs/gsap.js";
 Документация: https://template.fls.guru/template-docs/modul-spojlery.html
 Сниппет (HTML): spollers
 */
-flsFunctions.spollers();
+// flsFunctions.spollers();
 /*
 Модуль "Табы"
 Документация: https://template.fls.guru/template-docs/modul-taby.html
@@ -167,6 +167,8 @@ import "./libs/imask.js";
 Документация плагина: https://www.npmjs.com/package/mixitup
 */
 import "./libs/mixitup.js";
+
+import "./libs/accordion.js";
 
 /*
 Настройка подключения плагина AOS выполняется в файле js/files/aos.js

@@ -237,14 +237,16 @@ $burger-width: em(1060);
 		}
 
 		@media (max-width: $burger-width) {
+			overflow: hidden;
+
 			&:not(:last-child) {
 				margin-bottom: rem(30);
 			}
-		}
 
-		&._spoller-active {
-			&:not(:last-child) {
-				margin-bottom: rem(55);
+			&._spoller-active {
+				&:not(:last-child) {
+					margin-bottom: rem(20);
+				}
 			}
 		}
 	}
@@ -436,6 +438,12 @@ $burger-width: em(1060);
 		}
 	}
 
+	visibility: hidden;
+	._spoller-active & {
+		padding-top: rem(15);
+		visibility: visible;
+	}
+
 	&__body {
 		@media (min-width: $burger-width) {
 			margin-top: rem(10);
@@ -449,7 +457,6 @@ $burger-width: em(1060);
 		overflow: hidden;
 
 		transition: all 0.3s ease;
-		transform: translateY(rem(20));
 
 		._touch-show & {
 			transform: translateY(0);
@@ -467,10 +474,12 @@ $burger-width: em(1060);
 		line-height: 132%;
 		transition: all 0.3s ease;
 		display: block;
-		padding: rem(20);
+		padding: rem(10) 0;
 		white-space: pre-wrap;
+		pointer-events: auto;
 		@media (min-width: $burger-width) {
 			white-space: nowrap;
+			padding: rem(20) rem(30) rem(20) rem(20);
 		}
 		@media (any-hover: hover) {
 			&:hover {
