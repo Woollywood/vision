@@ -1929,6 +1929,10 @@
 
 		&--gradient-fix {
 			background: radial-gradient(126.47% 56.06% at 43.94% 51.4%, rgba(255, 255, 255, 0.00) 0%, #FFF 100%), lightgray 90px -68.481px / 89.298% 137.627% no-repeat;
+
+			img {
+				object-fit: contain !important;
+			}
 		}
 
 		@media (min-width: $tablet) {
