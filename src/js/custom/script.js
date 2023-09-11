@@ -96,5 +96,15 @@ window.addEventListener('load', (windowEvent) => {
 		if (targetElement.closest('.menu__summary')) {
 			targetElement.closest('.menu__summary').click();
 		}
+
+		if (targetElement.closest('.menu__summary--link')) {
+			console.log('prevent default');
+			clickEvent.preventDefault();
+		}
+
+		if (window.innerWidth <= 1060 && targetElement.closest('.menu__summary--link-desktop')) {
+			console.log('prevent default desk');
+			clickEvent.preventDefault();
+		}
 	});
 });
