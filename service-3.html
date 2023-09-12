@@ -1,0 +1,725 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title>Удаление катаракты</title>
+	<meta charset="UTF-8" />
+	<meta name="format-detection" content="telephone=no" />
+	<!-- <style>body{opacity: 0;}</style> -->
+	<link rel="stylesheet" href="css/style.min.css?_v=20230912201740" />
+	<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+	<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+	<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+	<link rel="manifest" href="/site.webmanifest" />
+	<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5" />
+	<meta name="msapplication-TileColor" content="#da532c" />
+	<meta name="theme-color" content="#ffffff" />
+	<!-- <meta name="robots" content="noindex, nofollow"> -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<!-- Инициализация кастомного скролла, если у пользователя отключен JS -->
+	<noscript>
+		<style>
+			[data-simplebar] {
+				overflow: auto;
+			}
+		</style>
+	</noscript>
+</head>
+
+<body>
+	<div class="wrapper background-grey">
+		<header class="header">
+			<div class="header__top top-header background-white">
+				<div class="top-header__container">
+					<div class="top-header__body">
+						<a class="top-header__location" href="#">
+							<svg>
+								<use xlink:href="img/icons/icons.svg#location"></use>
+							</svg>
+							Рудный, улица 40 Лет Октября, д. 30
+						</a>
+						<div class="top-header__schedule schedule-header">
+							<div class="schedule-header__body">
+								<div class="schedule-header__item">
+									<div class="schedule-header__button schedule-header__button_grey button-section-very-small button-hover-reset border-reset cursor-auto">
+										Пн-Пт
+									</div>
+									<div class="schedule-header__label">9:00-17:00</div>
+								</div>
+								<div class="schedule-header__item">
+									<div class="schedule-header__button schedule-header__button_grey button-section-very-small button-hover-reset border-reset cursor-auto">
+										Сб
+									</div>
+									<div class="schedule-header__label">9:00-12:00</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="header__main main-header background-grey">
+				<div class="main-header__container">
+					<div class="main-header__body">
+						<div class="main-header__left">
+							<a class="main-header__logo" href="#">
+								<img src="img/logo.svg" alt="img" />
+							</a>
+							<div class="main-header__menu menu">
+								<div class="menu__icon-wrapper" data-da=".actions-header__body, 1060, last">
+									<button type="button" class="menu__icon icon-menu"><span></span></button>
+								</div>
+								<nav class="menu__body">
+									<ul class="menu__list">
+										<li data-spollers="1060" class="menu__item">
+											<div class="menu__details">
+												<div class="menu__summary menu__summary--link">
+													<a href="#">Клиника</a>
+													<svg>
+														<use xlink:href="img/icons/icons.svg#arc"></use>
+													</svg>
+												</div>
+												<div class="menu__sub-menu sub-menu">
+													<div class="sub-menu__body">
+														<ul class="sub-menu__list">
+															<li class="sub-menu__item">
+																<a class="sub-menu__link" href="#">О нас</a>
+															</li>
+															<li class="sub-menu__item">
+																<a class="sub-menu__link" href="#">Справочник болезней</a>
+															</li>
+															<li class="sub-menu__item">
+																<a class="sub-menu__link" href="#">Полезная информация</a>
+															</li>
+															<li class="sub-menu__item">
+																<a class="sub-menu__link" href="#">Оборудование</a>
+															</li>
+														</ul>
+													</div>
+												</div>
+											</div>
+										</li>
+										<li class="menu__item"><a href="#" class="menu__link">Врачи</a></li>
+										<li data-spollers="1060" class="menu__item">
+											<div class="menu__details">
+												<div class="menu__summary menu__summary--link-desktop">
+													<a href="#">Услуги</a>
+													<svg>
+														<use xlink:href="img/icons/icons.svg#arc"></use>
+													</svg>
+												</div>
+												<div class="menu__sub-menu sub-menu">
+													<div class="sub-menu__body">
+														<ul class="sub-menu__list">
+															<li class="sub-menu__item">
+																<a class="sub-menu__link" href="#">Лазерная коррекция зрения</a>
+															</li>
+															<li class="sub-menu__item">
+																<a class="sub-menu__link" href="#">Хирургия глаукомы</a>
+															</li>
+															<li class="sub-menu__item">
+																<a class="sub-menu__link" href="#">Удаление катаракты</a>
+															</li>
+															<li class="sub-menu__item">
+																<a class="sub-menu__link" href="#">Комплексное обследование</a>
+															</li>
+															<li class="sub-menu__item">
+																<a class="sub-menu__link" href="#">Диагностика</a>
+															</li>
+														</ul>
+													</div>
+												</div>
+											</div>
+										</li>
+										<li class="menu__item"><a href="#" class="menu__link">Цены</a></li>
+										<li class="menu__item"><a href="#" class="menu__link">Контакты</a></li>
+									</ul>
+									<div class="menu__connect connect-menu">
+										<div class="connect-menu__body">
+											<div class="connect-menu__social social-connect">
+												<a class="social-connect__phone" href="tel:+77143124289">
+													<div class="social-connect__icon">
+														<svg>
+															<use xlink:href="img/icons/icons.svg#phone"></use>
+														</svg>
+													</div>
+													<span>+7 (71431) 2-42-89</span>
+												</a>
+											</div>
+											<button class="connect-menu__button button-section button-fluid">
+												<span>Связаться с нами</span>
+												<svg>
+													<use xlink:href="img/icons/icons.svg#cross"></use>
+												</svg>
+											</button>
+										</div>
+									</div>
+								</nav>
+							</div>
+						</div>
+						<div class="main-header__actions actions-header">
+							<div class="actions-header__body">
+								<a class="actions-header__phone" href="tel:+77143124289">
+									<svg>
+										<use xlink:href="img/icons/icons.svg#phone"></use>
+									</svg>
+									<span>+7 (71431) 2-42-89</span>
+								</a>
+								<a class="actions-header__social" href="#" target="_blank" data-da=".social-connect, 1060, last">
+									<div class="actions-header__social-wrapper">
+										<img src="img/header/whatsapp.svg" alt="whatsapp-svg" />
+									</div>
+									<span>Написать в Whatsapp</span>
+								</a>
+								<a class="actions-header__record-button button-section-small" href="#" data-popup="#record-popup">Онлайн-запись</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</header>
+
+		<main class="page">
+			<section class="section-13 gutter-medium">
+				<div class="section-13__container">
+					<div class="section-13__body">
+						<div class="section-13__inner item-container-top-fix background-accent">
+							<div class="section-13__content item-container-inner">
+								<div class="section-13__text-wrapper">
+									<h2>Удаление катаракты</h2>
+									<p>
+										В нашей клинике в Рудном мы лечим катаракту всеми доступными методами,
+										включая хирургическое лечение катаракты (операции по удалению катаракты).
+										Вся операция длится 15 мин. Сразу после ее проведения острота зрения
+										значительно увеличивается
+									</p>
+								</div>
+								<div class="main-block__labels label-container">
+									<a class="label" href="#" data-goto="#goto-block-1">Симптомы</a>
+									<a class="label" href="#" data-goto="#goto-block-2">Описание и виды</a>
+									<a class="label" href="#" data-goto="#goto-block-3">Причины</a>
+									<a class="label" href="#" data-goto="#goto-block-4">Лечение</a>
+								</div>
+							</div>
+							<div class="section-13__inner-background-ibg">
+								<img class="_lazy" data-srcset="img/section-13/03@1x.png, img/section-13/03@2x.png 2x" alt="img" />
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="section-14 gutter-medium" id="goto-block-1">
+				<div class="section-14__container">
+					<div class="section-14__body section-14__body--fix background-white">
+						<div class="section-14__sep"></div>
+						<div class="section-14__background-ibg">
+							<img class="_lazy" data-srcset="img/section-14/03@1x.png, img/section-14/03@2x.png 2x" alt="img" />
+						</div>
+						<div class="section-14__background-ibg section-14__background-ibg_mobile">
+							<img class="_lazy" data-srcset="img/section-14/03--mobile@1x.png, img/section-14/03--mobile@2x.png 2x" alt="img" />
+						</div>
+						<div class="section-14__content item-container-top-fix">
+							<div class="section-14__text-wrapper">
+								<h3>Симптомы катаракты</h3>
+								<ul>
+									<li>
+										<span><b>Постепенное ухудшение четкости зрения</b></span>
+									</li>
+									<li>
+										<span><b>Ухудшение видимости при ярком свете или увеличение чувствительности
+												к блеску</b></span>
+									</li>
+									<li>
+										<span><b>Потеря цветового восприятия</b></span>
+									</li>
+									<li>
+										<span><b>Увеличение проблем с видением в ночное время</b></span>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="section-15 gutter-medium" id="goto-block-2">
+				<div class="section-15__container section-title-container">
+					<div class="section-15__body">
+						<div class="section-15__block-left item-container-top-fix background-accent">
+							<div class="section-15__content color-white item-container-inner">
+								<div class="section-15__text-wrapper">
+									<h3>Описание</h3>
+									<p>
+										Катаракта — это помутнение хрусталика (природной линзы,которая лежит позади
+										радужки и зрачка) Термин катаракта произошел от греческого καταρράκτης
+										(cataractos) — бурлящая вода. Бурлящая вода становится белой, как и зрелые
+										катаракты
+									</p>
+									<p>
+										Катаракта, одна из наиболее частых причин потери зренияу людей старше 40 лет
+										и главная в мире причина потери зрения. Большое количество заболеваний
+										возникает при сопутствующем наличии у пациента глаукомы, макулярной
+										дегенерации и диабетической ретинопатии
+									</p>
+								</div>
+								<div class="section-15__attention-wrapper border-radius-20 background-white">
+									<div class="section-15__attention-icon">!</div>
+									<div class="section-15__attention-text">
+										<p>
+											Если вы замечаете любые из указанных признаков или у вас возникли
+											подозрения на наличие катаракты, рекомендуется обратиться к глазному
+											врачу для диагностики и консультации
+										</p>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="section-15__block-right item-container background-white">
+							<div class="section-15__content item-container-inner">
+								<div class="section-15__text-wrapper section-15__content_h-large">
+									<h3>Виды катаракты</h3>
+									<ul>
+										<li>
+											<span>
+												<b>Субкапсулярная катаракта</b>
+												<p>
+													Возникает в задней части хрусталика. У людей имеющих диабет и
+													лиц, принимающих большие дозы стероидных препаратов есть большой
+													риск развития субкапсулярной катаракты
+												</p>
+											</span>
+										</li>
+										<li>
+											<span>
+												<b>Ядерная (нуклеарная) формакатаракты</b>
+												<p>
+													Начинает прогрессировать в центральной зона хрусталика (ядре).
+													Эта форма катаракты является возрастной формой
+												</p>
+											</span>
+										</li>
+										<li>
+											<span>
+												<b>Кортикальная (корковая) катаракта</b>
+												<p>
+													Характеризуется наличием белого клиновидного помутнения, которое
+													начинается на периферии хрусталика и идет к центру, образуя
+													фигуру, напоминающую спицы в колесе. Кортикальная катаракта
+													возникает в коре хрусталика — это часть хрусталика, которая
+													окружает ядро
+												</p>
+											</span>
+										</li>
+									</ul>
+								</div>
+								<div class="section-15__bottom max-width-reset">
+									Выделяют четыре стадии развития катаракты: начальная, <br />
+									незрелая, зрелая, презрелая катаракты
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="section-19 gutter-medium" id="goto-block-3">
+				<div class="section-19__container">
+					<div class="section-19__body item-container-top-fix background-white">
+						<div class="section-19__content">
+							<div class="section-19__col">
+								<div class="section-19__col-content">
+									<h3>Что вызывает катаракту?</h3>
+									<p>
+										Хрусталик в глазу работает подобно линзе в фотоаппарате. Он создает фокус
+										изображения на сетчатке и мы видим предметы четко на разном расстоянии.
+										Хрусталик состоит в основном из воды и белков. Белки организованы в нем
+										определенным образом, что позволяет сохранить прозрачность хрусталика и
+										проходимость через него света
+									</p>
+									<p>
+										Но с возрастом эти белки образуют скопления и начинают затуманивать
+										маленькие участки хрусталика. Это и есть катарактаи со временем, ее границы
+										могут расширяться, а у человека ухудшается зрение
+									</p>
+								</div>
+							</div>
+							<div class="section-19__col">
+								<div class="section-19__col-content">
+									<div class="main-block__labels label-container">
+										<a class="label background-grey" href="#">Преклонный возраст</a>
+										<a class="label background-grey" href="#">Ультрафиолетовое облучение</a>
+										<a class="label background-grey" href="#">Гипертония</a>
+										<a class="label background-grey" href="#">Ранение или воспаление глаза</a>
+										<a class="label background-grey" href="#">Диабет</a>
+										<a class="label background-grey" href="#">Хирургическая операция на глазе</a>
+										<a class="label background-grey" href="#">Ожирение</a>
+										<a class="label background-grey" href="#">Высокие степени миопии</a>
+										<a class="label background-grey" href="#">Курение</a>
+										<a class="label background-grey" href="#">Значительное потребление алкоголя</a>
+										<a class="label background-grey" href="#">Катаракта у родственников</a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="section-18 gutter-adapt" id="goto-block-4">
+				<div class="section-18__container">
+					<div class="section-18__body item-container-top-fix background-accent">
+						<h3>Лечение катаракты</h3>
+						<div class="section-18__content">
+							<div class="section-18__content-inner item-container-inner">
+								<div class="section-18__col">
+									<div class="section-18__col-content">
+										<h4>Нехирургическое лечение</h4>
+										<p>
+											Когда симптомы катаракты только начинают проявляться, временное улучшение
+											зрения может быть достигнуто сменой очков или контактных линз
+										</p>
+									</div>
+								</div>
+								<a class="button-section" href="#" data-da=".section-18__content, 767.98" data-popup="#diagnostics-popup">Записаться на консультацию</a>
+							</div>
+							<div class="section-18__col">
+								<div class="section-18__col-content">
+									<h4>Хирургическое лечение</h4>
+									<p>
+										Хирургическое лечение катаракты рассматривается, когда катаракта достаточно
+										развилась и серьезно влияет на зрение и повседневную жизнь пациента.
+										Катарактальная хирургия является эффективным методом восстановления зрения,
+										и большинству пациентов удается вернуть зрение после операции.
+									</p>
+									<p>
+										Во время операции удаляется помутневший хрусталик и заменяется прозрачной
+										интраокулярной линзой (ИОЛ). Современные ИОЛы могут корректировать
+										пресбиопию (возрастную дальнозоркость)и блокировать вредные лучи
+										ультрафиолета и голубого спектра, предотвращая повреждение сетчатки
+									</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="section-slider gutter-adapt">
+				<div class="section-slider__container">
+					<div class="section-slider__body">
+						<div class="section-slider__text-wrapper">
+							<h2>
+								Наши специалисты <span>провели&nbsp;48&nbsp;000&nbsp;операций</span>
+							</h2>
+							<div class="slider-masters__controlls slider-controlls" data-da=".slider-masters.section-slider__slider, 767.98">
+								<div class="slider-arrows">
+									<button class="slider-arrow slider-arrow-prev" type="button">
+										<svg>
+											<use xlink:href="img/icons/icons.svg#arrow"></use>
+										</svg>
+									</button>
+									<button class="slider-arrow slider-arrow-next" type="button">
+										<svg>
+											<use xlink:href="img/icons/icons.svg#arrow"></use>
+										</svg>
+									</button>
+								</div>
+							</div>
+						</div>
+						<div class="section-slider__slider slider-masters">
+							<div class="section-slider__slider-body section-slider__swiper">
+								<a class="section-slider__slide border-radius-30-20" href="#">
+									<div class="section-slider__background-ibg">
+										<img class="_lazy" data-srcset="img/content/home/masters/01@1x.png, img/content/home/masters/01@2x.png 2x" alt="img" />
+									</div>
+									<div class="section-slider__content">
+										<h6>
+											Казанцев <br />
+											Александр Дмитриевич
+										</h6>
+										<p>Офтальмолог, 7 лет опыта</p>
+									</div>
+								</a>
+								<a class="section-slider__slide border-radius-30-20" href="#">
+									<div class="section-slider__background-ibg">
+										<img class="_lazy" data-srcset="img/content/home/masters/02@1x.png, img/content/home/masters/02@2x.png 2x" alt="img" />
+									</div>
+									<div class="section-slider__content">
+										<h6>
+											Башина <br />
+											Ирина Александровна
+										</h6>
+										<p>Офтальмолог, 9 лет опыта</p>
+									</div>
+								</a>
+								<a class="section-slider__slide border-radius-30-20" href="#">
+									<div class="section-slider__background-ibg">
+										<img class="_lazy" data-srcset="img/content/home/masters/03@1x.png, img/content/home/masters/03@2x.png 2x" alt="img" />
+									</div>
+									<div class="section-slider__content">
+										<h6>
+											Оганесян <br />
+											Арман Арменович
+										</h6>
+										<p>Офтальмолог, 7 лет опыта</p>
+									</div>
+								</a>
+								<a class="section-slider__slide border-radius-30-20" href="#">
+									<div class="section-slider__background-ibg">
+										<img class="_lazy" data-srcset="img/content/home/masters/04@1x.png, img/content/home/masters/04@2x.png 2x" alt="img" />
+									</div>
+									<div class="section-slider__content">
+										<h6>
+											Дибина <br />
+											Дарья Андреевна
+										</h6>
+										<p>Офтальмолог, 7 лет опыта</p>
+									</div>
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="form-bottom gutter-medium">
+				<div class="form-bottom__container">
+					<div class="form-bottom__body">
+						<h2 class="color-white">Оставить заявку на консультацию</h2>
+						<div class="form-bottom__form-wrapper">
+							<form class="form-bottom__form" action="/" data-ajax>
+								<div class="form-bottom__form-inputs">
+									<div class="form-bottom__form-input-wrapper">
+										<input type="text" class="form-bottom__form-input input" placeholder="Имя" data-required />
+										<div class="form-bottom__form-input-error">* Заполните поле</div>
+									</div>
+									<div class="form-bottom__form-input-wrapper">
+										<input type="tel" class="form-bottom__form-input input tel" placeholder="Телефон" data-required />
+										<div class="form-bottom__form-input-error">* Заполните поле</div>
+									</div>
+								</div>
+								<button class="form-bottom__form-button button-section-large" type="submit">
+									Отправить заявку
+								</button>
+							</form>
+							<div class="form-bottom__new-ticket">
+								<button class="form-bottom__form-button button-section-large" type="button">
+									Новая заявка
+								</button>
+								<p>Ваша заявка отправлена. В ближайшее время с вами свяжутся из клиники</p>
+							</div>
+							<div class="form-agreement">
+								Отправляя заявку, вы соглашаетесь <br />
+								<a href="#">с Пользовательским соглашением</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<div class="cookie-agreement active">
+				<div class="cookie-agreement__container">
+					<div class="cookie-agreement__body">
+						<p>
+							Мы собираем cokkie-данные, чтобы сделать работу сайта лучше и не используем их в
+							коммерческих целях
+						</p>
+						<button class="button-section-small" type="button">Понятно</button>
+					</div>
+				</div>
+			</div>
+		</main>
+		<footer class="footer background-grey">
+			<div class="footer__container">
+				<div class="footer__body item-container background-white">
+					<div class="footer__info info-footer">
+						<a class="info-footer__logo" href="#">
+							<img src="img/logo.svg" alt="img" />
+						</a>
+						<a class="info-footer__location" href="#">
+							<div class="info-footer__location-title">г. Рудный, ул. 40 Лет Октября, д.30</div>
+							<div class="info-footer__location-text">(остановка «Пожарная часть»)</div>
+						</a>
+						<div class="info-footer__social social-footer">
+							<a class="social-footer__icon-wrapper" href="#" target="_blank">
+								<svg>
+									<use xlink:href="img/icons/icons.svg#vk"></use>
+								</svg>
+							</a>
+							<a class="social-footer__icon-wrapper" href="#" target="_blank">
+								<svg>
+									<use xlink:href="img/icons/icons.svg#ok"></use>
+								</svg>
+							</a>
+							<a class="social-footer__icon-wrapper" href="#" target="_blank">
+								<svg>
+									<use xlink:href="img/icons/icons.svg#instagram"></use>
+								</svg>
+							</a>
+							<a class="social-footer__icon-wrapper" href="#" target="_blank">
+								<svg>
+									<use xlink:href="img/icons/icons.svg#whatsapp"></use>
+								</svg>
+							</a>
+						</div>
+						<div class="info-footer__bottom">
+							<a class="info-footer__privacy-policy" href="#">Политика конфидециальности</a>
+							<a class="info-footer__made-by" href="#">
+								<span>Сделано в</span>
+								<svg>
+									<use xlink:href="img/icons/icons.svg#maker"></use>
+								</svg>
+							</a>
+						</div>
+					</div>
+					<div class="footer__menu menu-footer">
+						<div class="menu-footer__list-wrapper">
+							<div class="menu-footer__title">Клиника</div>
+							<ul class="menu-footer__list">
+								<li class="menu-footer__item"><a class="menu-footer__link" href="#">О клинике</a></li>
+								<li class="menu-footer__item"><a class="menu-footer__link" href="#">Врачи</a></li>
+								<li class="menu-footer__item"><a class="menu-footer__link" href="#">Цены</a></li>
+								<li class="menu-footer__item"><a class="menu-footer__link" href="#">Полезная информация</a></li>
+								<li class="menu-footer__item"><a class="menu-footer__link" href="#">Справочник болезней</a></li>
+								<li class="menu-footer__item"><a class="menu-footer__link" href="#">Контакты</a></li>
+							</ul>
+						</div>
+						<div class="menu-footer__list-wrapper">
+							<div class="menu-footer__title">Услуги</div>
+							<ul class="menu-footer__list">
+								<li class="menu-footer__item">
+									<a class="menu-footer__link" href="#">Лазерная коррекция зрения</a>
+								</li>
+								<li class="menu-footer__item">
+									<a class="menu-footer__link" href="#">Хирургия глаукомы</a>
+								</li>
+								<li class="menu-footer__item">
+									<a class="menu-footer__link" href="#">Удаление катаракты</a>
+								</li>
+								<li class="menu-footer__item">
+									<a class="menu-footer__link" href="#">Обследование глаз</a>
+								</li>
+								<li class="menu-footer__item">
+									<a class="menu-footer__link" href="#">Диагностика</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</footer>
+
+	</div>
+
+	<div id="diagnostics-popup" aria-hidden="true" class="popup">
+		<div class="popup__wrapper">
+			<div class="popup__content">
+				<button data-close type="button" class="popup__close">
+					<svg>
+						<use xlink:href="img/icons/icons.svg#cross"></use>
+					</svg>
+				</button>
+				<div class="form-container">
+					<h2>Заявка на бесплатную диагностику</h2>
+					<form class="form-container__form" action="#">
+						<div class="form-container__text-fields">
+							<div class="form-container__input-wrapper">
+								<input class="form-container__input input" type="text" placeholder="Имя" data-required />
+								<div class="form-container__input-error">* Заполните поле</div>
+							</div>
+							<div class="form-container__input-wrapper">
+								<input class="form-container__input input tel" type="tel" placeholder="Телефон" data-required />
+								<div class="form-container__input-error">* Заполните поле</div>
+							</div>
+						</div>
+						<button class="form-container__button button-section button-fluid" type="submit">
+							Отправить заявку
+						</button>
+					</form>
+					<div class="form-container__agreement">
+						Отправляя заявку, вы соглашаетесь с <br />
+						<a href="#">Пользовательским соглашением</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div id="question-popup" aria-hidden="true" class="question-popup popup">
+		<div class="popup__wrapper">
+			<div class="popup__content">
+				<button data-close type="button" class="popup__close">
+					<svg>
+						<use xlink:href="img/icons/icons.svg#cross"></use>
+					</svg>
+				</button>
+				<div class="form-container">
+					<h2>Задать вопрос офтальмологу</h2>
+					<form class="form-container__form" action="#" data-ajax>
+						<div class="form-container__text-fields">
+							<div class="form-container__input-wrapper">
+								<input class="form-container__input input" type="text" placeholder="Имя" data-required />
+								<div class="form-container__input-error">* Заполните поле</div>
+							</div>
+							<div class="form-container__input-wrapper">
+								<input class="form-container__input input tel" type="tel" placeholder="Телефон" data-required />
+								<div class="form-container__input-error">* Заполните поле</div>
+							</div>
+							<div class="form-container__input-wrapper">
+								<textarea class="form-container__textarea input border-radius-30-20" placeholder="Вопрос" data-required></textarea>
+								<div class="form-container__input-error">* Заполните поле</div>
+							</div>
+						</div>
+						<button class="form-container__button button-section button-fluid" type="submit">
+							Отправить заявку
+						</button>
+					</form>
+					<div class="form-container__agreement">
+						Отправляя заявку, вы соглашаетесь с <br />
+						<a href="#">Пользовательским соглашением</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div id="record-popup" aria-hidden="true" class="record-popup popup">
+		<div class="popup__wrapper">
+			<div class="popup__content">
+				<button data-close type="button" class="popup__close">
+					<svg>
+						<use xlink:href="img/icons/icons.svg#cross"></use>
+					</svg>
+				</button>
+				<div class="form-container">
+					<h2>
+						Запись на прием <br />
+						в клинику «Зрение»
+					</h2>
+					<form class="form-container__form" action="#">
+						<div class="form-container__text-fields">
+							<div class="form-container__input-wrapper">
+								<input class="form-container__input input" type="text" placeholder="Имя" data-required />
+								<div class="form-container__input-error">* Заполните поле</div>
+							</div>
+							<div class="form-container__input-wrapper">
+								<input class="form-container__input input tel" type="tel" placeholder="Телефон" data-required />
+								<div class="form-container__input-error">* Заполните поле</div>
+							</div>
+							<select data-class-modif="form">
+								<option value="1" selected>Казанцев Александр Дмитриевич</option>
+								<option value="2">Башина Ирина Александровна</option>
+								<option value="3">Оганесян Арман Арменович</option>
+								<option value="4">Дибина Дарья Андреевна</option>
+							</select>
+						</div>
+						<button class="form-container__button button-section button-fluid" type="submit">
+							Записаться на прием
+						</button>
+					</form>
+					<div class="form-container__agreement">
+						Отправляя заявку, вы соглашаетесь с <br />
+						<a href="#">Пользовательским соглашением</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<script src="js/app.min.js?_v=20230912201740"></script>
+
+</body>
+
+</html>
