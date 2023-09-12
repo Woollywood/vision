@@ -1,0 +1,661 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title>Глаукома</title>
+	<meta charset="UTF-8" />
+	<meta name="format-detection" content="telephone=no" />
+	<!-- <style>body{opacity: 0;}</style> -->
+	<link rel="stylesheet" href="css/style.min.css?_v=20230912195420" />
+	<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+	<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+	<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+	<link rel="manifest" href="/site.webmanifest" />
+	<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5" />
+	<meta name="msapplication-TileColor" content="#da532c" />
+	<meta name="theme-color" content="#ffffff" />
+	<!-- <meta name="robots" content="noindex, nofollow"> -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<!-- Инициализация кастомного скролла, если у пользователя отключен JS -->
+	<noscript>
+		<style>
+			[data-simplebar] {
+				overflow: auto;
+			}
+		</style>
+	</noscript>
+</head>
+
+<body>
+	<div class="wrapper background-grey">
+		<header class="header">
+			<div class="header__top top-header background-white">
+				<div class="top-header__container">
+					<div class="top-header__body">
+						<a class="top-header__location" href="#">
+							<svg>
+								<use xlink:href="img/icons/icons.svg#location"></use>
+							</svg>
+							Рудный, улица 40 Лет Октября, д. 30
+						</a>
+						<div class="top-header__schedule schedule-header">
+							<div class="schedule-header__body">
+								<div class="schedule-header__item">
+									<div class="schedule-header__button schedule-header__button_grey button-section-very-small button-hover-reset border-reset cursor-auto">
+										Пн-Пт
+									</div>
+									<div class="schedule-header__label">9:00-17:00</div>
+								</div>
+								<div class="schedule-header__item">
+									<div class="schedule-header__button schedule-header__button_grey button-section-very-small button-hover-reset border-reset cursor-auto">
+										Сб
+									</div>
+									<div class="schedule-header__label">9:00-12:00</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="header__main main-header background-grey">
+				<div class="main-header__container">
+					<div class="main-header__body">
+						<div class="main-header__left">
+							<a class="main-header__logo" href="#">
+								<img src="img/logo.svg" alt="img" />
+							</a>
+							<div class="main-header__menu menu">
+								<div class="menu__icon-wrapper" data-da=".actions-header__body, 1060, last">
+									<button type="button" class="menu__icon icon-menu"><span></span></button>
+								</div>
+								<nav class="menu__body">
+									<ul class="menu__list">
+										<li data-spollers="1060" class="menu__item">
+											<div class="menu__details">
+												<div class="menu__summary menu__summary--link">
+													<a href="#">Клиника</a>
+													<svg>
+														<use xlink:href="img/icons/icons.svg#arc"></use>
+													</svg>
+												</div>
+												<div class="menu__sub-menu sub-menu">
+													<div class="sub-menu__body">
+														<ul class="sub-menu__list">
+															<li class="sub-menu__item">
+																<a class="sub-menu__link" href="#">О нас</a>
+															</li>
+															<li class="sub-menu__item">
+																<a class="sub-menu__link" href="#">Справочник болезней</a>
+															</li>
+															<li class="sub-menu__item">
+																<a class="sub-menu__link" href="#">Полезная информация</a>
+															</li>
+															<li class="sub-menu__item">
+																<a class="sub-menu__link" href="#">Оборудование</a>
+															</li>
+														</ul>
+													</div>
+												</div>
+											</div>
+										</li>
+										<li class="menu__item"><a href="#" class="menu__link">Врачи</a></li>
+										<li data-spollers="1060" class="menu__item">
+											<div class="menu__details">
+												<div class="menu__summary menu__summary--link-desktop">
+													<a href="#">Услуги</a>
+													<svg>
+														<use xlink:href="img/icons/icons.svg#arc"></use>
+													</svg>
+												</div>
+												<div class="menu__sub-menu sub-menu">
+													<div class="sub-menu__body">
+														<ul class="sub-menu__list">
+															<li class="sub-menu__item">
+																<a class="sub-menu__link" href="#">Лазерная коррекция зрения</a>
+															</li>
+															<li class="sub-menu__item">
+																<a class="sub-menu__link" href="#">Хирургия глаукомы</a>
+															</li>
+															<li class="sub-menu__item">
+																<a class="sub-menu__link" href="#">Удаление катаракты</a>
+															</li>
+															<li class="sub-menu__item">
+																<a class="sub-menu__link" href="#">Комплексное обследование</a>
+															</li>
+															<li class="sub-menu__item">
+																<a class="sub-menu__link" href="#">Диагностика</a>
+															</li>
+														</ul>
+													</div>
+												</div>
+											</div>
+										</li>
+										<li class="menu__item"><a href="#" class="menu__link">Цены</a></li>
+										<li class="menu__item"><a href="#" class="menu__link">Контакты</a></li>
+									</ul>
+									<div class="menu__connect connect-menu">
+										<div class="connect-menu__body">
+											<div class="connect-menu__social social-connect">
+												<a class="social-connect__phone" href="tel:+77143124289">
+													<div class="social-connect__icon">
+														<svg>
+															<use xlink:href="img/icons/icons.svg#phone"></use>
+														</svg>
+													</div>
+													<span>+7 (71431) 2-42-89</span>
+												</a>
+											</div>
+											<button class="connect-menu__button button-section button-fluid">
+												<span>Связаться с нами</span>
+												<svg>
+													<use xlink:href="img/icons/icons.svg#cross"></use>
+												</svg>
+											</button>
+										</div>
+									</div>
+								</nav>
+							</div>
+						</div>
+						<div class="main-header__actions actions-header">
+							<div class="actions-header__body">
+								<a class="actions-header__phone" href="tel:+77143124289">
+									<svg>
+										<use xlink:href="img/icons/icons.svg#phone"></use>
+									</svg>
+									<span>+7 (71431) 2-42-89</span>
+								</a>
+								<a class="actions-header__social" href="#" target="_blank" data-da=".social-connect, 1060, last">
+									<div class="actions-header__social-wrapper">
+										<img src="img/header/whatsapp.svg" alt="whatsapp-svg" />
+									</div>
+									<span>Написать в Whatsapp</span>
+								</a>
+								<a class="actions-header__record-button button-section-small" href="#" data-popup="#record-popup">Онлайн-запись</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</header>
+
+		<main class="page">
+			<section class="section-25 section-25_disease gutter-large">
+				<div class="section-25__container">
+					<div class="section-25__body background-white">
+						<div class="section-25__inner">
+							<div class="section-25__content">
+								<div class="section-25__text-wrapper">
+									<div class="breadcrumbs">
+										<ul>
+											<li>
+												<a href="#">Справочник болезней</a>
+											</li>
+											<li>
+												<span>Глаукома</span>
+											</li>
+										</ul>
+									</div>
+									<h2>Глаукома</h2>
+								</div>
+								<div class="main-block__labels label-container">
+									<a class="label-outstroke" href="#" data-goto="#goto-block-1">Описание и виды</a>
+									<a class="label-outstroke" href="#" data-goto="#goto-block-2">Симптомы</a>
+									<a class="label-outstroke" href="#" data-goto="#goto-block-3">Лечение и коррекция</a>
+								</div>
+							</div>
+						</div>
+						<div class="section-25__background-ibg section-25__background-ibg--fix-dis-1">
+							<img class="_lazy" data-srcset="img/section-25/09.svg" alt="img" />
+						</div>
+						<div class="section-25__background-ibg section-25__background-ibg--fix-dis-1 section-25__background-ibg_mobile">
+							<img class="_lazy" data-srcset="img/section-25/09--mobile.svg" alt="img" />
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="section-27 section-27_disease gutter-medium" id="goto-block-1">
+				<div class="section-27__container section-title-container">
+					<div class="section-27__body">
+						<div class="section-27__block-left item-container-top-fix background-accent">
+							<div class="section-27__content color-white item-container-inner">
+								<div class="section-27__top">
+									<h3>Описание</h3>
+									<p>
+										Глаукома — это хроническое заболевание глаза, которое может привести к
+										постепенной потере зрения. Оно связано с повышенным внутриглазным давлением,
+										которое наносит вред зрительному нерву
+									</p>
+									<p>
+										У нас в глазу есть специальная жидкость, которая поддерживает форму глаза и
+										питает его. Нормально она должна вытекать, чтобы сохранить стабильное
+										давление. В случае глаукомы жидкость не может свободно вытекать из глаза, и
+										давление внутри увеличивается
+									</p>
+									<p>
+										С появлением глаукомы может не быть явных симптомовв самом начале. Однако по
+										мере развития заболеванияони могут возникнуть
+									</p>
+								</div>
+								<div class="section-15__attention-wrapper border-radius-20 background-white">
+									<div class="section-15__attention-icon">!</div>
+									<div class="section-15__attention-text">
+										<p>
+											В случае появления симптомов, рекомендуется обратиться за медицинской
+											помощью как можно скорее для проведения профессионального обследования и
+											определения необходимости коррекции глаукомы
+										</p>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="section-27__block-right item-container-top-fix background-white">
+							<div class="section-27__content item-container-inner">
+								<div class="section-27__content-inner">
+									<h3>Виды глаукомы</h3>
+									<ul>
+										<li>
+											<span>
+												<b>Открытоугольная глаукома</b>
+												<p>
+													Это самый распространенный тип глаукомы. В этом случае жидкость
+													внутри глаза неправильно циркулирует через специальный канал,
+													называемый сетчаткой. Это приводит к повышению внутриглазного
+													давления, которое постепенно повреждает зрительный нерв и может
+													привести к потере зрения
+												</p>
+											</span>
+										</li>
+										<li>
+											<span>
+												<b>Угловая (закрытоугольная) глаукома</b>
+												<p>
+													Этот тип глаукомы происходит, когда передняя часть глаза имеет
+													узкое пространство между радужной оболочкой и роговицей, что
+													препятствует нормальному оттоку жидкости. Закрытоугольная
+													глаукома может возникнуть внезапно с симптомами, такими как
+													сильная боль в глазу, понижение зрения, тошнота и рвота. Это
+													срочное состояние, требующее медицинской помощи
+												</p>
+											</span>
+										</li>
+										<li>
+											<span>
+												<b>Травматическая катаракта</b>
+												<p>
+													Тип катаракты возникает в результате травмы или повреждения
+													глаза. Удар, проникновение инородного тела или другие
+													травматические воздействия могут вызвать помутнение хрусталика
+												</p>
+											</span>
+										</li>
+										<li>
+											<span>
+												<b>Псевдоэксфолиативная глаукома</b>
+												<p>
+													В этом случае внутри глаза образуется вещество, называемое
+													псевдоэксфолиатом, которое накапливается на различных структурах
+													глаза, включая радужку. Это может привести к препятствию для
+													циркуляции жидкости в глазу и повышению внутриглазного давления
+												</p>
+											</span>
+										</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="section-22 gutter-medium" id="goto-block-2">
+				<div class="section-22__container">
+					<div class="section-22__body item-container-top-fix background-white">
+						<h3>Симптомы глаукомы</h3>
+						<div class="section-22__body-inner">
+							<div class="section-22__block-left">
+								<div class="section-22__content">
+									<ul>
+										<li>
+											<span>
+												<b>Постепенное ухудшение периферического зрения</b>
+												<p>
+													В первую очередь глаукома влияет на наше периферическое зрение,
+													то есть на способность видеть объекты сбоку или вокруг нас. Это
+													может происходить неощутимо и незаметно
+												</p>
+											</span>
+										</li>
+										<li>
+											<span>
+												<b>Ухудшение зрения в условиях низкой освещенности</b>
+												<p>
+													Люди с катарактой могут испытывать затруднения при видении в
+													темноте или при слабом освещении. Это может проявлятьсяв
+													трудностях при вождении ночью или в темных помещениях
+												</p>
+											</span>
+										</li>
+										<li>
+											<span>
+												<b>Появление «тоннельного зрения»</b>
+												<p>
+													По мере прогрессирования глаукомы, зрение может стать все более
+													ограниченным и суженным, будто мы смотрим сквозь тоннель.
+													Человек может упустить из виду предметы или людей, находящихся
+													вокруг него
+												</p>
+											</span>
+										</li>
+									</ul>
+								</div>
+							</div>
+							<div class="section-22__block-right">
+								<div class="section-22__content section-22__content_decorate-reset">
+									<ul>
+										<li>
+											<span>
+												<b>Изменение восприятия цвета</b>
+												<p>
+													Глаукома может привести к изменению способности различать
+													некоторые цвета. Особенно синий и зеленый цвета могут казаться
+													менее яркими или блеклыми
+												</p>
+											</span>
+										</li>
+										<li>
+											<span>
+												<b>Повышенная чувствительность к свету</b>
+												<p>
+													Некоторые люди с глаукомой могут стать более чувствительными к
+													яркому свету или заметить появление гало вокруг источников света
+												</p>
+											</span>
+										</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="section-22 gutter-medium" id="goto-block-3">
+				<div class="section-22__container">
+					<div class="section-22__body item-container-top-fix background-accent">
+						<h3>Лечение и коррекция глаукомы</h3>
+						<div class="section-22__body-inner">
+							<div class="section-22__block-left">
+								<div class="section-22__content">
+									<ul>
+										<li>
+											<span>
+												<b>Лекарственная терапия</b>
+												<p>
+													Лекарственные препараты, как правило, используются в качестве
+													первой линии лечения глаукомы. Они могут быть представлены
+													глазными каплями или таблетками. Лекарства могут помочь улучшить
+													дренаж жидкости из глаза или снизить ее производство, что
+													приводит к снижению внутриглазного давления
+												</p>
+											</span>
+										</li>
+										<li>
+											<span>
+												<b>Хирургическое вмешательство</b>
+												<p>
+													В случаях, когда лекарственная терапия неэффективна или
+													недостаточна, может потребоваться хирургическое вмешательство.
+													Процедуры могут включать создание новых оттоков для жидкости из
+													глаза (трабекулэктомия), использование имплантируемых устройств
+													для снижения давления или лазерную хирургию для улучшения
+													дренажа
+												</p>
+											</span>
+										</li>
+									</ul>
+								</div>
+							</div>
+							<div class="section-22__block-right">
+								<div class="section-22__content section-22__content_decorate-reset">
+									<ul>
+										<li>
+											<span>
+												<b>Микроинвазивные процедуры</b>
+												<p>
+													Это новое направление в лечении глаукомы, которое предлагает
+													минимально инвазивные методы для снижения внутриглазного
+													давления. Примеры включают использование микроинвазивных глазных
+													стентов или лазерных процедур для улучшения дренажа жидкости
+												</p>
+											</span>
+										</li>
+										<li>
+											<span>
+												<b>Следование диете и образу жизни</b>
+												<p>
+													Некоторые исследования показывают, что здоровый образ жизнии
+													правильное питание могут оказывать положительное влияние на
+													глаукому. Регулярные физические упражнения, снижение стресса,
+													употребление пищи, богатой антиоксидантами, и избегание курения
+													могут помочь управлять глаукомой
+												</p>
+											</span>
+										</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<div class="cookie-agreement active">
+				<div class="cookie-agreement__container">
+					<div class="cookie-agreement__body">
+						<p>
+							Мы собираем cokkie-данные, чтобы сделать работу сайта лучше и не используем их в
+							коммерческих целях
+						</p>
+						<button class="button-section-small" type="button">Понятно</button>
+					</div>
+				</div>
+			</div>
+		</main>
+		<footer class="footer background-grey">
+			<div class="footer__container">
+				<div class="footer__body item-container background-white">
+					<div class="footer__info info-footer">
+						<a class="info-footer__logo" href="#">
+							<img src="img/logo.svg" alt="img" />
+						</a>
+						<a class="info-footer__location" href="#">
+							<div class="info-footer__location-title">г. Рудный, ул. 40 Лет Октября, д.30</div>
+							<div class="info-footer__location-text">(остановка «Пожарная часть»)</div>
+						</a>
+						<div class="info-footer__social social-footer">
+							<a class="social-footer__icon-wrapper" href="#" target="_blank">
+								<svg>
+									<use xlink:href="img/icons/icons.svg#vk"></use>
+								</svg>
+							</a>
+							<a class="social-footer__icon-wrapper" href="#" target="_blank">
+								<svg>
+									<use xlink:href="img/icons/icons.svg#ok"></use>
+								</svg>
+							</a>
+							<a class="social-footer__icon-wrapper" href="#" target="_blank">
+								<svg>
+									<use xlink:href="img/icons/icons.svg#instagram"></use>
+								</svg>
+							</a>
+							<a class="social-footer__icon-wrapper" href="#" target="_blank">
+								<svg>
+									<use xlink:href="img/icons/icons.svg#whatsapp"></use>
+								</svg>
+							</a>
+						</div>
+						<div class="info-footer__bottom">
+							<a class="info-footer__privacy-policy" href="#">Политика конфидециальности</a>
+							<a class="info-footer__made-by" href="#">
+								<span>Сделано в</span>
+								<svg>
+									<use xlink:href="img/icons/icons.svg#maker"></use>
+								</svg>
+							</a>
+						</div>
+					</div>
+					<div class="footer__menu menu-footer">
+						<div class="menu-footer__list-wrapper">
+							<div class="menu-footer__title">Клиника</div>
+							<ul class="menu-footer__list">
+								<li class="menu-footer__item"><a class="menu-footer__link" href="#">О клинике</a></li>
+								<li class="menu-footer__item"><a class="menu-footer__link" href="#">Врачи</a></li>
+								<li class="menu-footer__item"><a class="menu-footer__link" href="#">Цены</a></li>
+								<li class="menu-footer__item"><a class="menu-footer__link" href="#">Полезная информация</a></li>
+								<li class="menu-footer__item"><a class="menu-footer__link" href="#">Справочник болезней</a></li>
+								<li class="menu-footer__item"><a class="menu-footer__link" href="#">Контакты</a></li>
+							</ul>
+						</div>
+						<div class="menu-footer__list-wrapper">
+							<div class="menu-footer__title">Услуги</div>
+							<ul class="menu-footer__list">
+								<li class="menu-footer__item">
+									<a class="menu-footer__link" href="#">Лазерная коррекция зрения</a>
+								</li>
+								<li class="menu-footer__item">
+									<a class="menu-footer__link" href="#">Хирургия глаукомы</a>
+								</li>
+								<li class="menu-footer__item">
+									<a class="menu-footer__link" href="#">Удаление катаракты</a>
+								</li>
+								<li class="menu-footer__item">
+									<a class="menu-footer__link" href="#">Обследование глаз</a>
+								</li>
+								<li class="menu-footer__item">
+									<a class="menu-footer__link" href="#">Диагностика</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</footer>
+
+	</div>
+
+	<div id="diagnostics-popup" aria-hidden="true" class="popup">
+		<div class="popup__wrapper">
+			<div class="popup__content">
+				<button data-close type="button" class="popup__close">
+					<svg>
+						<use xlink:href="img/icons/icons.svg#cross"></use>
+					</svg>
+				</button>
+				<div class="form-container">
+					<h2>Заявка на бесплатную диагностику</h2>
+					<form class="form-container__form" action="#">
+						<div class="form-container__text-fields">
+							<div class="form-container__input-wrapper">
+								<input class="form-container__input input" type="text" placeholder="Имя" data-required />
+								<div class="form-container__input-error">* Заполните поле</div>
+							</div>
+							<div class="form-container__input-wrapper">
+								<input class="form-container__input input tel" type="tel" placeholder="Телефон" data-required />
+								<div class="form-container__input-error">* Заполните поле</div>
+							</div>
+						</div>
+						<button class="form-container__button button-section button-fluid" type="submit">
+							Отправить заявку
+						</button>
+					</form>
+					<div class="form-container__agreement">
+						Отправляя заявку, вы соглашаетесь с <br />
+						<a href="#">Пользовательским соглашением</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div id="question-popup" aria-hidden="true" class="question-popup popup">
+		<div class="popup__wrapper">
+			<div class="popup__content">
+				<button data-close type="button" class="popup__close">
+					<svg>
+						<use xlink:href="img/icons/icons.svg#cross"></use>
+					</svg>
+				</button>
+				<div class="form-container">
+					<h2>Задать вопрос офтальмологу</h2>
+					<form class="form-container__form" action="#" data-ajax>
+						<div class="form-container__text-fields">
+							<div class="form-container__input-wrapper">
+								<input class="form-container__input input" type="text" placeholder="Имя" data-required />
+								<div class="form-container__input-error">* Заполните поле</div>
+							</div>
+							<div class="form-container__input-wrapper">
+								<input class="form-container__input input tel" type="tel" placeholder="Телефон" data-required />
+								<div class="form-container__input-error">* Заполните поле</div>
+							</div>
+							<div class="form-container__input-wrapper">
+								<textarea class="form-container__textarea input border-radius-30-20" placeholder="Вопрос" data-required></textarea>
+								<div class="form-container__input-error">* Заполните поле</div>
+							</div>
+						</div>
+						<button class="form-container__button button-section button-fluid" type="submit">
+							Отправить заявку
+						</button>
+					</form>
+					<div class="form-container__agreement">
+						Отправляя заявку, вы соглашаетесь с <br />
+						<a href="#">Пользовательским соглашением</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div id="record-popup" aria-hidden="true" class="record-popup popup">
+		<div class="popup__wrapper">
+			<div class="popup__content">
+				<button data-close type="button" class="popup__close">
+					<svg>
+						<use xlink:href="img/icons/icons.svg#cross"></use>
+					</svg>
+				</button>
+				<div class="form-container">
+					<h2>
+						Запись на прием <br />
+						в клинику «Зрение»
+					</h2>
+					<form class="form-container__form" action="#">
+						<div class="form-container__text-fields">
+							<div class="form-container__input-wrapper">
+								<input class="form-container__input input" type="text" placeholder="Имя" data-required />
+								<div class="form-container__input-error">* Заполните поле</div>
+							</div>
+							<div class="form-container__input-wrapper">
+								<input class="form-container__input input tel" type="tel" placeholder="Телефон" data-required />
+								<div class="form-container__input-error">* Заполните поле</div>
+							</div>
+							<select data-class-modif="form">
+								<option value="1" selected>Казанцев Александр Дмитриевич</option>
+								<option value="2">Башина Ирина Александровна</option>
+								<option value="3">Оганесян Арман Арменович</option>
+								<option value="4">Дибина Дарья Андреевна</option>
+							</select>
+						</div>
+						<button class="form-container__button button-section button-fluid" type="submit">
+							Записаться на прием
+						</button>
+					</form>
+					<div class="form-container__agreement">
+						Отправляя заявку, вы соглашаетесь с <br />
+						<a href="#">Пользовательским соглашением</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<script src="js/app.min.js?_v=20230912195420"></script>
+
+</body>
+
+</html>
