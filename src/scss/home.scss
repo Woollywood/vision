@@ -1501,7 +1501,7 @@
 		position: relative;
 
 		@media (max-width: $mobile) {
-			@include adaptiveValue("min-height", 350, 750, 0, 768, 360);
+			@include adaptiveValue('min-height', 350, 750, 0, 768, 360);
 		}
 
 		.section-12__content {
@@ -1928,10 +1928,24 @@
 		width: 100%;
 
 		&--gradient-fix {
-			background: radial-gradient(126.47% 56.06% at 43.94% 51.4%, rgba(255, 255, 255, 0.00) 0%, #FFF 100%), lightgray 90px -68.481px / 89.298% 137.627% no-repeat;
-
 			img {
-				object-fit: contain !important;
+				@media (min-width: $pc) {
+					object-fit: contain !important;
+				}
+			}
+
+			@media (max-width: $pc) and (min-width: $tablet) {
+				&::before {
+					content: '';
+					position: absolute;
+					z-index: 3;
+					top: 0;
+					left: 0;
+					width: 101%;
+					height: 100%;
+					// background: radial-gradient(126.47% 56.06% at 43.94% 51.4%, rgba(255, 255, 255, 0) 0%, #fff 100%);
+					background: linear-gradient(90deg, rgba(#fff, 0) 80%, #fff 90%, #fff);
+				}
 			}
 		}
 
